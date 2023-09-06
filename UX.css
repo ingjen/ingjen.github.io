@@ -173,8 +173,6 @@ body {
 .main .UX .CONTUX {
     flex: 1;
     padding: 1.3rem;
-    top: 0;
-
 }
 
 .main .UX .CONTUX .h2 {
@@ -185,6 +183,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
+    text-align: left;
 }
 
 .main .UX .CONTUX .p {
@@ -194,7 +193,8 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 1.3rem;
-    
+    text-align: left;
+
 }
 
 .main .UX .CONTUX .h4 {
@@ -206,7 +206,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
-    
+    text-align: left;
 }
 
 .main .UX .CONTPRO {
@@ -232,7 +232,7 @@ body {
     height: 200px;
 }
 
-.main .UX .CONTPRO section{
+.main .UX .CONTPRO article {
     display: flex;
     justify-content: space-between;
     align-items: center;

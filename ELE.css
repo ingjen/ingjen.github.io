@@ -163,48 +163,19 @@ body {
     z-index: 1;
 }
 
-.main .dev {
+.main .ELE {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
 }
 
-.main .dev .CONTPRO {
+.main .ELE .CONTELE {
     flex: 1;
     padding: 1.3rem;
 }
 
-.main .dev .CONTPRO article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.3rem;
-
-}
-
-.main .dev .CONTPRO .num {
-    margin: 0 0.625rem 0 0;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-
-}
-
-.main .dev .CONTPRO .img {
-    width: 500px;
-    height: 200px;
-}
-
-.main .dev .CONTDEV {
-    flex: 1;
-    padding: 1.3rem;
-}
-
-.main .dev .CONTDEV .h2 {
+.main .ELE .CONTELE .h2 {
     font-family: Inter;
     font-size: 40px;
     font-style: normal;
@@ -212,20 +183,21 @@ body {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
-    text-align: right;
+    text-align: left;
 }
 
-.main .dev .CONTDEV .p {
+.main .ELE .CONTELE .p {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 1.3rem;
-    text-align: right;
+    text-align: left;
+
 }
 
-.main .dev .CONTDEV .h4 {
+.main .ELE .CONTELE .h4 {
     color: var(--rosa);
     font-family: Inter;
     font-size: 25px;
@@ -234,8 +206,39 @@ body {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
-    text-align: right;
+    text-align: left;
 }
+
+.main .ELE .CONTPRO {
+    flex: 1;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main .ELE .CONTPRO .num {
+    margin: 0 0.625rem 0 0;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.main .ELE .CONTPRO .img {
+    width: 500px;
+    height: 200px;
+}
+
+.main .ELE .CONTPRO article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
 
 .footer {
     position: absolute;
