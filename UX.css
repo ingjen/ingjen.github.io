@@ -2,8 +2,7 @@
     --blanco: #F8FAF7;
     --negro: #000000;
     --rosa: #BF06A0;
-    --tipo-titular: 'Inter', sans-serif;
-    --tipo-parrafo: 'Inter', sans-serif;
+    --texto: 'Inter', sans-serif;
 }
 
 * {
@@ -65,7 +64,7 @@ button,
 input,
 textarea,
 select {
-    font-family: var(--tipo-parrafo);
+    font-family: var(--texto);
     font-size: 100%;
     min-height: 100vh;
     background-color: var(--blanco);
@@ -81,9 +80,8 @@ hr {
 
 body {
     position: relative;
-    font-family: var(--tipo-parrafo);
+    font-family: var(--texto);
     font-size: 100%;
-    /*min-height: 100vh;*/
     background-color: var(--negro);
     color: var(--blanco);
     font-smooth: always;
@@ -119,7 +117,7 @@ body {
 .header .nav .ul .li {
     z-index: 2;
     margin-left: 5rem;
-    font-family: var(--tipo-titular);
+    font-family: var(--texto);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
@@ -137,13 +135,13 @@ body {
 .header .nav .ul .li .a ::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% + 10px);
     height: 100%;
     background-color: transparent;
-    border-radius: 15px;
+    border-radius: 20px;
     transition: background-color 0.3s;
     z-index: -1;
 }
@@ -151,7 +149,7 @@ body {
 .header .nav .ul .li .a:hover {
     background: #F8FAF7;
     border-radius: 100px;
-    color: rebeccapurple;
+    color: var(--negro);
 }
 
 .header .nav .ul .li .a:hover::before {
@@ -168,6 +166,7 @@ body {
     flex-direction: row;
     width: 100%;
     align-items: center;
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
 }
 
 .main .UX .CONTUX {
@@ -176,7 +175,7 @@ body {
 }
 
 .main .UX .CONTUX .h2 {
-    font-family: Inter;
+    font-family: var(--texto);
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -187,7 +186,7 @@ body {
 }
 
 .main .UX .CONTUX .p {
-    font-family: Inter;
+    font-family: var(--texto);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -219,7 +218,7 @@ body {
 
 .main .UX .CONTPRO .num {
     margin: 0 0.625rem 0 0;
-    font-family: Inter;
+    font-family: var(--texto);
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -230,6 +229,9 @@ body {
 .main .UX .CONTPRO .img {
     width: 500px;
     height: 200px;
+}
+.main .UX .CONTPRO .img:hover{
+    filter: opacity(.5);
 }
 
 .main .UX .CONTPRO article {
@@ -252,10 +254,24 @@ body {
 .footer .span {
     color: var(--blanco);
     text-align: center;
-    font-family: Inter;
+    font-family: var(--texto);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+}
+
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+[transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
 }
