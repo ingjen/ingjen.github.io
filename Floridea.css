@@ -182,7 +182,8 @@ body {
 .main .Info .contimg {
     background-color: blue;
     flex: 1;
-    padding: 1.3rem;;
+    padding: 1.3rem;
+    ;
 }
 
 .main .Info .contimg .img {
@@ -261,7 +262,8 @@ body {
     line-height: normal;
     text-align: justify;
 }
-.main .UR .URIMG{
+
+.main .UR .URIMG {
     background-color: lightpink;
     display: flex;
     flex-direction: row;
@@ -272,7 +274,7 @@ body {
 .main .UR .URIMG .UR1 {
     background-color: darkgray;
     flex: 1;
-    
+
 }
 
 .main .UR .URIMG .UR1 .img {
@@ -294,122 +296,245 @@ body {
 
 .main .Dis {
     background-color: darkmagenta;
+    padding: 1.3rem;
 }
 
 .main .Dis .h4 {
     background-color: darkolivegreen;
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main .Dis .p {
     background-color: darkorange;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
 }
 
-.main .Dis .DIS1 {
+.main .Dis .disimg {
+    background-color: magenta;
+    display: flex;
+    flex-direction: row;
+    padding: 1.3rem;
+    justify-content: space-around;
+}
+
+.main .Dis .disimg .DIS1 {
     background-color: darkorchid;
+    flex: 1;
 }
 
-.main .Dis .DIS1 .img {
+.main .Dis .disimg .DIS1 .img {
     background-color: darkred;
+    height: 31.25rem;
+    width: 18.75rem;
 }
 
-.main .Dis .DIS2 {
+.main .Dis .disimg .DIS2 {
     background-color: darksalmon;
+    flex: 1;
 }
 
-.main .Dis .DIS2 .img {
+.main .Dis .disimg .DIS2 .img {
     background-color: darkseagreen;
+    height: 31.25rem;
+    width: 18.75rem;
 }
 
 .main .EU {
     background-color: darkslateblue;
+    padding: 1.3rem;
 }
 
 .main .EU .h4 {
     background-color: darkslategray;
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main .EU .p {
     background-color: darkturquoise;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
 }
 
-.main .EU .EULI {
+.main .EU .EUC {
+    background-color: maroon;
+    display: flex;
+    flex-direction: row;
+    padding: 1.3rem;
+    justify-content: space-around;
+}
+
+.main .EU .EUC .EULI {
     background-color: darkviolet;
+    flex: 2;
 }
 
-.main .EU .EULI .ul {
+.main .EU .EUC .EULI .ul {
     background-color: deeppink;
+    list-style-type: square;
 }
 
-.main .EU .EULI .ul .li {
+.main .EU .EUC .EULI .ul .li {
     background-color: deepskyblue;
+    font-family: var(--texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    list-style-type: circle;
 }
 
-.main .EU .EUI {
+.main .EU .EUC .EUI {
     background-color: dimgray;
+    flex: 1;
 }
 
-.main .EU .EUI .img {
+.main .EU .EUC .EUI .img {
     background-color: dodgerblue;
+    height: 19rem;
+    width: 19rem;
 }
 
 .main .HIFI {
     background-color: firebrick;
+    padding:1.3rem;
 }
 
 .main .HIFI .h4 {
-    background-color: floralwhite;
+    background-color: midnightblue;
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main .HIFI .p {
     background-color: forestgreen;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+}
+.main .HIFI .HIFIC{
+    background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: row;
+    padding: 1.3rem;
 }
 
-.main .HIFI .HIFIIMG {
+.main .HIFI .HIFIC .HIFIIMG {
     background-color: fuchsia;
+    flex:1;
 }
 
-.main .HIFI .HIFIIMG .img {
+.main .HIFI .HIFIC .HIFIIMG .img {
     background-color: gainsboro;
+    width: 18rem;
+    height: 18rem;
 }
 
-.main .HIFI .HIFIA {
+.main .HIFI .HIFIC .HIFIA {
     background-color: ghostwhite;
+    flex: 1;
 }
 
-.main .HIFI .HIFIA .p {
+.main .HIFI .HIFIC .HIFIA .p {
     background-color: gold;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: oblique;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: blue;
 }
 
-.main .HIFI .HIFIA .p .a {
+.main .HIFI .HIFIC .HIFIA .p .a {
     background-color: goldenrod;
+}
+
+.main .HIFI .HIFIC .HIFIA .p .a:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+.main .HIFI .HIFIC .HIFIA .p .a:hover::before{
+    text-decoration: underline;
+    color: purple;
 }
 
 .main .conclu {
     background-color: gray;
+    padding: 1.3rem;
 }
 
 .main .conclu .h4 {
     background-color: green;
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main .conclu .p {
     background-color: hotpink;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
 }
 
 .main .conclu .blockquote {
     background-color: indianred;
+    padding-left: 1.3rem;
 }
 
-.main .conclu .blockquote .p {
+.main .conclu .blockquote .Frase {
     background-color: indigo;
 }
 
-.main .conclu .blockquote .footer {
+.main .conclu .blockquote .autor {
     background-color: khaki;
 }
 
 .main .conclu .p {
     background-color: lavender;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
 }
 
 .main .conclu .ul {
