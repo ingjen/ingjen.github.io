@@ -391,7 +391,6 @@ body {
 
 .main .EU .EUC .EULI .ul {
     background-color: deeppink;
-    list-style-type: square;
 }
 
 .main .EU .EUC .EULI .ul .li {
@@ -543,6 +542,13 @@ body {
 
 .main .conclu .ul .li {
     background-color: lawngreen;
+    font-family: var(--texto);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    list-style-type: circle;
 }
 
 .footer {
