@@ -135,7 +135,7 @@ body {
 
 .header .nav .ul .li .a ::before {
     content: "";
-    position: absolute;
+    position: absolute;|
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -183,13 +183,15 @@ body {
     background-color: blue;
     flex: 1;
     padding: 1.3rem;
-    ;
+    text-align: center;
 }
 
 .main .Info .contimg .img {
     background-color: blueviolet;
     width: 20rem;
     height: 20rem;
+    display: block;
+    margin: auto;
 }
 
 .main .Info .continf {
@@ -206,6 +208,7 @@ body {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 .main .Info .continf .p {
@@ -215,6 +218,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 0.5rem;
 }
 
 .main .Info .continf .table {
@@ -227,6 +231,7 @@ body {
 
 .main .Info .continf .table .tr .td {
     background-color: cornsilk;
+    width: 50%;
 }
 
 .main .Info .continf .table .tr .td .h4 {
@@ -251,6 +256,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main .UR .p {
@@ -261,6 +267,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .UR .URIMG {
@@ -274,24 +281,29 @@ body {
 .main .UR .URIMG .UR1 {
     background-color: darkgray;
     flex: 1;
-
+    align-items: center;
 }
 
 .main .UR .URIMG .UR1 .img {
     background-color: darkgreen;
     width: 20rem;
     height: 20rem;
+    display: block;
+    margin: auto;
 }
 
 .main .UR .URIMG .UR2 {
     background-color: lightcoral;
     flex: 1;
+    align-items: center;
 }
 
 .main .UR .URIMG .UR2 .img {
     background-color: darkkhaki;
     width: 20rem;
     height: 20rem;
+    display: block;
+    margin: auto;
 }
 
 .main .Dis {
@@ -308,6 +320,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main .Dis .p {
@@ -318,6 +331,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .Dis .disimg {
@@ -325,29 +339,34 @@ body {
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
-    justify-content: space-around;
 }
 
 .main .Dis .disimg .DIS1 {
     background-color: darkorchid;
     flex: 1;
+    align-items: center;
 }
 
 .main .Dis .disimg .DIS1 .img {
     background-color: darkred;
     height: 31.25rem;
     width: 18.75rem;
+    display: block;
+    margin: auto;
 }
 
 .main .Dis .disimg .DIS2 {
     background-color: darksalmon;
     flex: 1;
+    align-items: center;
 }
 
 .main .Dis .disimg .DIS2 .img {
     background-color: darkseagreen;
     height: 31.25rem;
     width: 18.75rem;
+    display: block;
+    margin: auto;
 }
 
 .main .EU {
@@ -364,6 +383,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main .EU .p {
@@ -374,6 +394,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .EU .EUC {
@@ -402,22 +423,26 @@ body {
     line-height: normal;
     text-align: justify;
     list-style-type: circle;
+    margin-bottom: 0.5rem;
 }
 
 .main .EU .EUC .EUI {
     background-color: dimgray;
     flex: 1;
+    align-content: center;
 }
 
 .main .EU .EUC .EUI .img {
     background-color: dodgerblue;
     height: 19rem;
     width: 19rem;
+    display: block;
+    margin: auto;
 }
 
 .main .HIFI {
     background-color: firebrick;
-    padding:1.3rem;
+    padding: 1.3rem;
 }
 
 .main .HIFI .h4 {
@@ -429,6 +454,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main .HIFI .p {
@@ -439,8 +465,10 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
-.main .HIFI .HIFIC{
+
+.main .HIFI .HIFIC {
     background-color: mediumaquamarine;
     display: flex;
     flex-direction: row;
@@ -449,13 +477,16 @@ body {
 
 .main .HIFI .HIFIC .HIFIIMG {
     background-color: fuchsia;
-    flex:1;
+    flex: 1;
+    align-items: center;
 }
 
 .main .HIFI .HIFIC .HIFIIMG .img {
     background-color: gainsboro;
     width: 18rem;
     height: 18rem;
+    display: block;
+    margin: auto;
 }
 
 .main .HIFI .HIFIC .HIFIA {
@@ -478,13 +509,14 @@ body {
     background-color: goldenrod;
 }
 
-.main .HIFI .HIFIC .HIFIA .p .a:hover{
-    text-decoration: underline;
-    color: aliceblue;
-}
-.main .HIFI .HIFIC .HIFIA .p .a:hover::before{
+.main .HIFI .HIFIC .HIFIA .p .a:hover {
     text-decoration: underline;
     color: purple;
+}
+
+.main .HIFI .HIFIC .HIFIA .p .a:hover::before {
+    text-decoration: underline;
+    color: white;
 }
 
 .main .conclu {
@@ -501,6 +533,7 @@ body {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .main .conclu .p {
@@ -511,6 +544,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .conclu .blockquote {
@@ -520,10 +554,25 @@ body {
 
 .main .conclu .blockquote .Frase {
     background-color: indigo;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+    font-style: italic;
 }
 
 .main .conclu .blockquote .autor {
     background-color: khaki;
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .conclu .p {
@@ -534,6 +583,7 @@ body {
     font-weight: 400;
     line-height: normal;
     text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .conclu .ul {
@@ -549,6 +599,7 @@ body {
     line-height: normal;
     text-align: justify;
     list-style-type: circle;
+    margin-bottom: 0.5rem;
 }
 
 .footer {
