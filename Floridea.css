@@ -167,27 +167,23 @@ body {
 }
 
 .main .portada .img {
-    background-color: chocolate;
     width: 100%;
     height: 25rem;
 }
 
 .main .Info {
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
 }
 
 .main .Info .contimg {
-    background-color: blue;
     flex: 1;
     padding: 1.3rem;
     text-align: center;
 }
 
 .main .Info .contimg .img {
-    background-color: blueviolet;
     width: 20rem;
     height: 20rem;
     display: block;
@@ -195,13 +191,11 @@ body {
 }
 
 .main .Info .continf {
-    background-color: brown;
     flex: 2;
     padding: 1.3rem;
 }
 
 .main .Info .continf .h4 {
-    background-color: burlywood;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -212,7 +206,6 @@ body {
 }
 
 .main .Info .continf .p {
-    background-color: cadetblue;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -222,33 +215,26 @@ body {
 }
 
 .main .Info .continf .table {
-    background-color: coral;
 }
 
 .main .Info .continf .table .tr {
-    background-color: cornflowerblue;
 }
 
 .main .Info .continf .table .tr .td {
-    background-color: cornsilk;
     width: 50%;
 }
 
 .main .Info .continf .table .tr .td .h4 {
-    background-color: crimson;
 }
 
 .main .Info .continf .table .tr .td .p {
-    background-color: cyan;
 }
 
 .main .UR {
-    background-color: darkblue;
     padding: 1.3rem;
 }
 
 .main .UR .h4 {
-    background-color: darkcyan;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -260,7 +246,6 @@ body {
 }
 
 .main .UR .p {
-    background-color: darkgoldenrod;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -271,7 +256,6 @@ body {
 }
 
 .main .UR .URIMG {
-    background-color: lightpink;
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
@@ -279,13 +263,11 @@ body {
 }
 
 .main .UR .URIMG .UR1 {
-    background-color: darkgray;
     flex: 1;
     align-items: center;
 }
 
 .main .UR .URIMG .UR1 .img {
-    background-color: darkgreen;
     width: 20rem;
     height: 20rem;
     display: block;
@@ -293,13 +275,11 @@ body {
 }
 
 .main .UR .URIMG .UR2 {
-    background-color: lightcoral;
     flex: 1;
     align-items: center;
 }
 
 .main .UR .URIMG .UR2 .img {
-    background-color: darkkhaki;
     width: 20rem;
     height: 20rem;
     display: block;
@@ -307,12 +287,10 @@ body {
 }
 
 .main .Dis {
-    background-color: darkmagenta;
     padding: 1.3rem;
 }
 
 .main .Dis .h4 {
-    background-color: darkolivegreen;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -324,7 +302,6 @@ body {
 }
 
 .main .Dis .p {
-    background-color: darkorange;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -335,20 +312,17 @@ body {
 }
 
 .main .Dis .disimg {
-    background-color: magenta;
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
 }
 
 .main .Dis .disimg .DIS1 {
-    background-color: darkorchid;
     flex: 1;
     align-items: center;
 }
 
 .main .Dis .disimg .DIS1 .img {
-    background-color: darkred;
     height: 31.25rem;
     width: 18.75rem;
     display: block;
@@ -356,13 +330,11 @@ body {
 }
 
 .main .Dis .disimg .DIS2 {
-    background-color: darksalmon;
     flex: 1;
     align-items: center;
 }
 
 .main .Dis .disimg .DIS2 .img {
-    background-color: darkseagreen;
     height: 31.25rem;
     width: 18.75rem;
     display: block;
@@ -370,12 +342,10 @@ body {
 }
 
 .main .EU {
-    background-color: darkslateblue;
     padding: 1.3rem;
 }
 
 .main .EU .h4 {
-    background-color: darkslategray;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -387,7 +357,6 @@ body {
 }
 
 .main .EU .p {
-    background-color: darkturquoise;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -398,7 +367,6 @@ body {
 }
 
 .main .EU .EUC {
-    background-color: maroon;
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
@@ -406,16 +374,13 @@ body {
 }
 
 .main .EU .EUC .EULI {
-    background-color: darkviolet;
     flex: 2;
 }
 
 .main .EU .EUC .EULI .ul {
-    background-color: deeppink;
 }
 
 .main .EU .EUC .EULI .ul .li {
-    background-color: deepskyblue;
     font-family: var(--texto);
     font-size: 1rem;
     font-style: normal;
@@ -427,13 +392,11 @@ body {
 }
 
 .main .EU .EUC .EUI {
-    background-color: dimgray;
     flex: 1;
     align-content: center;
 }
 
 .main .EU .EUC .EUI .img {
-    background-color: dodgerblue;
     height: 19rem;
     width: 19rem;
     display: block;
@@ -441,12 +404,10 @@ body {
 }
 
 .main .HIFI {
-    background-color: firebrick;
     padding: 1.3rem;
 }
 
 .main .HIFI .h4 {
-    background-color: midnightblue;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -458,7 +419,6 @@ body {
 }
 
 .main .HIFI .p {
-    background-color: forestgreen;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -469,20 +429,17 @@ body {
 }
 
 .main .HIFI .HIFIC {
-    background-color: mediumaquamarine;
     display: flex;
     flex-direction: row;
     padding: 1.3rem;
 }
 
 .main .HIFI .HIFIC .HIFIIMG {
-    background-color: fuchsia;
     flex: 1;
     align-items: center;
 }
 
 .main .HIFI .HIFIC .HIFIIMG .img {
-    background-color: gainsboro;
     width: 18rem;
     height: 18rem;
     display: block;
@@ -490,12 +447,10 @@ body {
 }
 
 .main .HIFI .HIFIC .HIFIA {
-    background-color: ghostwhite;
     flex: 1;
 }
 
 .main .HIFI .HIFIC .HIFIA .p {
-    background-color: gold;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: oblique;
@@ -506,7 +461,6 @@ body {
 }
 
 .main .HIFI .HIFIC .HIFIA .p .a {
-    background-color: goldenrod;
 }
 
 .main .HIFI .HIFIC .HIFIA .p .a:hover {
@@ -520,12 +474,10 @@ body {
 }
 
 .main .conclu {
-    background-color: gray;
     padding: 1.3rem;
 }
 
 .main .conclu .h4 {
-    background-color: green;
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
@@ -537,7 +489,6 @@ body {
 }
 
 .main .conclu .p {
-    background-color: hotpink;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -548,12 +499,10 @@ body {
 }
 
 .main .conclu .blockquote {
-    background-color: indianred;
     padding-left: 1.3rem;
 }
 
 .main .conclu .blockquote .Frase {
-    background-color: indigo;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -565,7 +514,6 @@ body {
 }
 
 .main .conclu .blockquote .autor {
-    background-color: khaki;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -576,7 +524,6 @@ body {
 }
 
 .main .conclu .p {
-    background-color: lavender;
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -587,11 +534,10 @@ body {
 }
 
 .main .conclu .ul {
-    background-color: lemonchiffon;
+    margin-left: 1.5rem;
 }
 
 .main .conclu .ul .li {
-    background-color: lawngreen;
     font-family: var(--texto);
     font-size: 1rem;
     font-style: normal;
