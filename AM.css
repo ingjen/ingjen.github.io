@@ -199,11 +199,13 @@ body {
     text-align: left;
 }
 
-.main .AM .C1 .p span {
+.main .AM .C1 .p .span {
     color: var(--rosa);
 }
 
-.main .AM .C1 .Frase {
+.main .AM .C1 .blockquote {}
+
+.main .AM .C1 .blockquote .Frase {
     color: var(--rosa);
     font-family: Inter;
     font-size: 20px;
@@ -213,7 +215,8 @@ body {
     margin: 1.3rem;
 }
 
-.main .AM .C1 .Autor {
+
+.main .AM .C1 .blockquote .autor {
     font-family: Inter;
     font-size: 15px;
     font-style: italic;
@@ -223,64 +226,48 @@ body {
     margin-bottom: 1.3rem;
 }
 
-.main .AM .C1 .Contact {
+.main .AM .C1 .skills {}
+
+.main .AM .C1 .skills .h3 {
+    color: var(--rosa);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+    text-align: left;
 }
 
-.main .AM .C1 .Contact .tipo {
+.main .AM .C1 .skills .table {}
+
+.main .AM .C1 .skills .table .tr {}
+
+.main .AM .C1 .skills .table .tr .td {}
+
+.main .AM .C1 .skills .table .tr .td .h4 {
     font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
+    font-size: 22px;
+    font-style: bold;
     font-weight: 600;
     line-height: normal;
     margin-bottom: 1.3rem;
     text-align: left;
 }
 
-.main .AM .C1 .Contact .tipo .mail {
+.main .AM .C1 .skills .table .tr .td .ul {}
+
+.main .AM .C1 .skills .table .tr .td .ul li {
+    list-style: circle;
+    padding: 0.2rem;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
     text-align: left;
-    text-decoration: underline;
-}
-
-/*Agregar detalle del hover en mail*/
-
-.main .AM .C1 .Contact .tipo .mail .a {
-}
-
-.main .AM .C1 .Contact .h3 {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
-}
-
-.main .AM .C1 .Contact .rrss {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
-    align-items: center;
-}
-
-.main .AM .C1 .Contact .rrss .li {
-    margin-right: 1em;
-}
-
-.main .AM .C1 .Contact .rrss .li .a {
-
-}
-
-.main .AM .C1 .Contact .rrss .li .svg {
-    width: 2rem;
-    height: 2rem;
 }
 
 .main .AM .C2 {
@@ -301,7 +288,9 @@ body {
     height: 400px;
 }
 
-.main .AM .C2 .perfil .button {
+.main .AM .C2 .perfil .a {}
+
+.main .AM .C2 .perfil .a .button {
     border: 0.15rem solid var(--blanco);
     line-height: 1;
     font-size: 1rem;
@@ -315,13 +304,12 @@ body {
 
 }
 
-.main .AM .C2 .Experiencia {
-}
+.main .AM .C2 .Contact {}
 
-.main .AM .C2 .Experiencia .h4 {
+.main .AM .C2 .Contact .h3 {
     color: var(--rosa);
     font-family: Inter;
-    font-size: 25px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -330,48 +318,27 @@ body {
     text-align: left;
 }
 
-.main .AM .C2 .Experiencia .ul {
-}
-
-.main .AM .C2 .Experiencia .ul li {
-    list-style: circle;
-    padding: 0.2rem;
+.main .AM .C2 .Contact .p {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     text-align: left;
 }
 
-.main .AM .C2 .Experiencia .ul span {
+.main .AM .C2 .Contact .tipo {
     font-family: Inter;
-    font-size: 17px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-align: left;
-    text-transform: uppercase;
-
-}
-
-.main .AM .C2 .skills {
-}
-
-.main .AM .C2 .skills .h4 {
-    color: var(--rosa);
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
     margin-bottom: 1.3rem;
     text-align: left;
 }
 
-.main .AM .C2 .skills .p {
+.main .AM .C2 .Contact .tipo .mail {
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
@@ -379,6 +346,38 @@ body {
     line-height: normal;
     margin-bottom: 1.3rem;
     text-align: left;
+    text-decoration: underline;
+}
+
+.main .AM .C2 .Contact .tipo .mail .a {}
+
+.main .AM .C2 .Contact .h4 {
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.3rem;
+    text-align: left;
+}
+
+.main .AM .C2 .Contact .rrss {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.main .AM .C2 .Contact .rrss .li {
+    margin-right: 1em;
+}
+
+.main .AM .C2 .Contact .rrss .li .a {}
+
+.main .AM .C2 .Contact .rrss .li .a .svg {
+    width: 2rem;
+    height: 2rem;
 }
 
 .footer {
