@@ -427,30 +427,7 @@ body {
     text-align: justify;
     margin-bottom: 0.5rem;
 }
-
-.main .HIFI .HIFIC {
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
-}
-
-.main .HIFI .HIFIC .HIFIIMG {
-    flex: 1;
-    align-items: center;
-}
-
-.main .HIFI .HIFIC .HIFIIMG .img {
-    width: 18rem;
-    height: 18rem;
-    display: block;
-    margin: auto;
-}
-
-.main .HIFI .HIFIC .HIFIA {
-    flex: 1;
-}
-
-.main .HIFI .HIFIC .HIFIA .p {
+.main .HIFI .link{
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: oblique;
@@ -460,17 +437,24 @@ body {
     color: blue;
 }
 
-.main .HIFI .HIFIC .HIFIA .p .a {
+.main .HIFI .link .a{
+
+}
+.main .HIFI .link .a:hover{
+    text-decoration: underline;
+    color: var(--rosa);
 }
 
-.main .HIFI .HIFIC .HIFIA .p .a:hover {
+.main .HIFI .link .a:hover::before{
     text-decoration: underline;
-    color: purple;
+    color: var(--blanco);
 }
 
-.main .HIFI .HIFIC .HIFIA .p .a:hover::before {
-    text-decoration: underline;
-    color: white;
+.main .HIFI .img{
+    width: 18rem;
+    height: 18rem;
+    display: block;
+    margin: auto;
 }
 
 .main .conclu {
