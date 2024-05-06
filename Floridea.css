@@ -26,7 +26,7 @@ a {
     display: block;
     text-decoration: none;
     color: inherit;
-    cursor: none;
+    cursor: auto;
 }
 
 p a {
@@ -74,7 +74,6 @@ select {
 }
 
 hr {
-    display: block;
     color: aliceblue;
 }
 
