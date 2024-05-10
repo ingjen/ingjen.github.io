@@ -230,7 +230,7 @@ body {
 }
 
 .main .UR {
-    padding: 1.3rem;
+    padding: 2rem;
 }
 
 .main .UR .h4 {
@@ -267,8 +267,8 @@ body {
 }
 
 .main .UR .URIMG .UR1 .img {
-    width: 20rem;
-    height: 20rem;
+    width: 90%;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -279,14 +279,14 @@ body {
 }
 
 .main .UR .URIMG .UR2 .img {
-    width: 20rem;
-    height: 20rem;
+    width: 90%;
+    height: auto;
     display: block;
     margin: auto;
 }
 
 .main .Dis {
-    padding: 1.3rem;
+    padding: 2rem;
 }
 
 .main .Dis .h4 {
@@ -341,7 +341,7 @@ body {
 }
 
 .main .EU {
-    padding: 1.3rem;
+    padding: 2rem;
 }
 
 .main .EU .h4 {
@@ -396,14 +396,14 @@ body {
 }
 
 .main .EU .EUC .EUI .img {
-    height: 19rem;
-    width: 19rem;
+    height: auto;
+    width: auto;
     display: block;
     margin: auto;
 }
 
 .main .HIFI {
-    padding: 1.3rem;
+    padding: 2rem;
 }
 
 .main .HIFI .h4 {
@@ -450,14 +450,15 @@ body {
 }
 
 .main .HIFI .img{
-    width: 18rem;
-    height: 18rem;
+    padding-top: 2rem;
+    width: auto;
+    height: auto;
     display: block;
     margin: auto;
 }
 
 .main .conclu {
-    padding: 1.3rem;
+    padding: 2rem;
 }
 
 .main .conclu .h4 {
