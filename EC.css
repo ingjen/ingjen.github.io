@@ -183,8 +183,8 @@ body {
 }
 
 .main .Info .contimg .img {
-    width: 20rem;
-    height: 20rem;
+    width: auto;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -267,7 +267,7 @@ body {
 }
 
 .main .UR .URIMG .UR1 .img {
-    width: 90%;
+    width: 95%;
     height: auto;
     display: block;
     margin: auto;
@@ -279,7 +279,7 @@ body {
 }
 
 .main .UR .URIMG .UR2 .img {
-    width: 90%;
+    width: 95%;
     height: auto;
     display: block;
     margin: auto;
@@ -322,8 +322,8 @@ body {
 }
 
 .main .Dis .disimg .DIS1 .img {
-    height: 31.25rem;
-    width: 18.75rem;
+    height: auto;
+    width: 95%;
     display: block;
     margin: auto;
 }
@@ -334,8 +334,8 @@ body {
 }
 
 .main .Dis .disimg .DIS2 .img {
-    height: 31.25rem;
-    width: 18.75rem;
+    height: auto;
+    width: 95%;
     display: block;
     margin: auto;
 }
@@ -388,6 +388,7 @@ body {
     text-align: justify;
     list-style-type: circle;
     margin-bottom: 0.5rem;
+    padding-right: 1rem;
 }
 
 .main .EU .EUC .EUI {
