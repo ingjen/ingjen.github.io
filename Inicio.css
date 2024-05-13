@@ -1,7 +1,7 @@
 :root {
     --blanco: #F8FAF7;
     --negro: #000000;
-    --rosa:  #BF06A0;
+    --rosa: #BF06A0;
     --texto: 'Inter', sans-serif;
 }
 
@@ -251,7 +251,6 @@ body {
     text-transform: uppercase;
 }
 
-/*Agregar Mouse y animación*/
 @keyframes wipe-in-right {
     from {
         clip-path: inset(0 100% 0 0);
@@ -264,22 +263,4 @@ body {
 
 [transition-style="in:wipe:right"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-}
-
-#cursor {
-    width: 3.5em;
-    height: 3.5em;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    pointer-events: none;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-}
-
-#cursor.mini {
-    transform: scale(0.5);
-    transition: all .1s linear;
 }

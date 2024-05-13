@@ -41,11 +41,11 @@
     </header>
     <main class="main">
         <div class="portada">
-            <img src="Imagenes/DEV/Portfolio/Portada.png" alt="#" class="img">
+            <img src="#" alt="#" class="img">
         </div>
         <div class="Info">
             <div class="contimg">
-                <img src="Imagenes/DEV/Portfolio/proyectos portfolio.png" alt="#" class="img">
+                <img src="#" alt="#" class="img">
             </div>
             <div class="continf">
                 <h4 class="h4">El problema</h4>
@@ -85,8 +85,8 @@
                     </tr>
                     <tr class="tr">
                         <td class="td">
-                            <p class="p"><mark> ón, Planificación, Diseño de UX, Desarrollo Frontend,
-                                    Organización de Contenidos, Optimización, Documentación, Promoción.</mark></p>
+                            <p class="p">Identificación, Investigación, Evaluación, Desarrollo, Diseño, Planificación,
+                                Documentación y Presentación.</p>
                         </td>
                         <td class="td">
                             <p class="p"> Noviembre - Diciembre 2021</p>
@@ -95,12 +95,14 @@
                 </table>
             </div>
         </div>
-        <div class="UR">
+        <div class="OBJ">
             <h4 class="h4">Objetivos Generales y Especificos</h4>
-            <strong>General</strong>
+            <br>
+            <strong class="strong">General</strong>
             <p class="p">Desarrollar un prototipo experimental de medición y almacenamiento de datos de sensores para
                 comprobar el funcionamiento de un sistema en donde se encuentra una turbina.</p>
-            <strong>Especificos</strong>
+            <br>
+            <strong class="strong">Especificos</strong>
             <ul class="ul">
                 <li class="li">Diseñar y construir un prototipo que mida y
                     almacene los datos de los sensores que se
@@ -113,62 +115,92 @@
                     observar si funciona con las condiciones que
                     se le presentan.</li>
             </ul>
-            <div class="URIMG">
-                <div class="UR1">
-                    <img src="Imagenes/DEV/Portfolio/Portfolio 1.0-min.png" alt="#" class="img">
-                </div>
-            </div>
+            <br>
+            <img src="#" alt="#" class="img">
         </div>
-        <div class="Dis">
+        <div class="Var">
             <h4 class="h4">Variables a medir</h4>
             <p class="p">
                 Se identificaron las variables críticas para evaluar el funcionamiento de la turbina, las cuales son el
-                caudal y la presión.
-
-                En términos de dinámica de fluidos, el caudal se refiere a la cantidad de fluido que atraviesa una
+                caudal y la presión.</p>
+            <br>
+            <p class="p">En términos de dinámica de fluidos, el caudal se refiere a la cantidad de fluido que atraviesa
+                una
                 sección específica de un conducto (como una tubería, canal, río, etc.) por unidad de tiempo. Por otro
                 lado, la presión se define como la fuerza ejercida por un cuerpo (ya sea gaseoso, líquido o sólido) en
                 relación con la superficie sobre la cual actúa. La presión se considera una magnitud física, medida en
                 pascales (Pa) según el Sistema Internacional de Unidades. La presión absoluta representa la suma de la
-                presión atmosférica y la presión manométrica.
+                presión atmosférica y la presión manométrica.</p>
+        </div>
+        <div class="Sen">
+            <h4 class="h4">Sensores Investigados</h4>
+            <p class="p">
+                Para este proyecto, se seleccionaron cuidadosamente los siguientes sensores: el caudalímetro ultrasónico
+                con montaje en la pared, siendo el modelo FDT-25W de la marca Omega o el modelo TDS-100F de la marca
+                Dalian; y el transductor de alta precisión para la medición de presión, ya sea el modelo PX409-050AV o
+                el PX409-050A5V, ambos de la marca Omega.</p>
+            <br>
+            <p class="p">Estos sensores fueron elegidos después de una evaluación exhaustiva de las condiciones actuales
+                del
+                sistema de la turbina, así como considerando las restricciones presupuestarias asociadas al proyecto.
             </p>
-            <div class="disimg">
-                <div class="DIS1">
-                    <img src="Imagenes/DEV/Portfolio/Diseño en Figma-min.png" alt="#" class="img">
-                </div>
-                <div class="DIS2">
-                    <img src="Imagenes/DEV/Portfolio/Programacion-min.png" alt="#" class="img">
-                </div>
+            <br>
+        </div>
+        <div class="DC">
+            <h4 class="h4">Diseño del Circuito</h4>
+            <p class="p">
+                El diseño del circuito fue concebido considerando las limitaciones presupuestarias, dado que esta
+                propuesta se encuentra en fase inicial. Se incluyeron características de interfaz de usuario con menús
+                interactivos para visualizar los datos directamente en el dispositivo. Además, se incorporó un
+                registrador de datos (data logger) para almacenar la información localmente, junto con un módulo de
+                procesamiento de datos que permite la transmisión de los mismos a través de Wi-Fi para su visualización
+                en una página web.</p>
+            <br>
+            <p class="p">El diseño también incluyó la implementación de códigos de error para identificar posibles
+                problemas en
+                el funcionamiento de la turbina, permitiendo su monitoreo remoto. Se tomaron en consideración las
+                condiciones eléctricas en las que operarían tanto los sensores como los demás componentes del circuito,
+                garantizando así un rendimiento óptimo y seguro.</p>
+            </p>
+            <br>
+        </div>
+        <div class="DEXT">
+            <h4 class="h4">Diseño Exterior del Dispositivo</h4>
+            <p class="p">
+                El diseño exterior del dispositivo se caracteriza por su simplicidad y funcionalidad, facilitando la
+                conexión y operación de los sensores. Incorpora una entrada para una memoria SD para el almacenamiento
+                de datos, una pantalla que permite la visualización de menús interactivos y datos en tiempo real, así
+                como LEDs indicadores que muestran el estado y funcionamiento de los sensores, además de la transmisión
+                de datos.</p>
+
+                <p class="p">Se han incorporado etiquetas informativas que detallan el manual de funcionamiento y advertencias
+                    pertinentes para el usuario, asegurando una operación segura y eficiente del dispositivo. Asimismo, se
+                    ha diseñado el dispositivo con la capacidad de ser montado de forma fija en la pared, proporcionando
+                    flexibilidad en su ubicación y facilitando su uso en entornos industriales o de instalaciones
+                    específicas.</p>
+            <br>
+            <div class="DEXTIMG">
+                <img src="Imagenes/DEV/Portfolio/5ab7465995b.png" alt="">
+                <img src="Imagenes/DEV/Portfolio/5ab7465995b.png" alt="">
             </div>
         </div>
-        <div class="HIFI">
-            <h4 class="h4">Integración de Contenido y Funcionalidades:</h4>
-            <p class="p">
-                En términos generales, organicé el portfolio de manera intuitiva y sencilla para minimizar errores de
-                uso y facilitar la visualización de todos los proyectos en los que he trabajado. Dividí el portfolio en
-                categorías según los proyectos relacionados con diseño de UX, programación y electrónica. Además, incluí
-                una sección "Sobre mí" donde comparto mis intereses tanto profesionales como personales, mis habilidades
-                y proporciono información de contacto a través de mi correo electrónico, así como acceso a mi currículum
-                vitae. Para una mayor transparencia y colaboración, el código fuente de este portfolio está disponible
-                en el siguiente enlace:</p>
-            <span class="link"><a href="#" class="a" target="_blank" rel="noopener noreferrer">Codigo de mi portfolio en
-                    Github.</a></span>
-            <br>
-            <img src="Imagenes/DEV/Portfolio/5ab7465995b.png" alt="">
-        </div>
         <div class="conclu">
-            <h4 class="h4">Aprendizajes y reflexiones</h4>
-            <p class="p">Este proyecto ha sido una labor que he realizado en mis momentos libres, la cual he llegado a
-                disfrutar y apreciar profundamente como parte de mi interés por la programación y el diseño de
-                experiencia de usuario (UX). En el camino, me he enfrentado a varios desafíos, desde cuestiones
-                relacionadas con el diseño que no me convencían hasta la complejidad de implementar y posicionar
-                elementos en HTML y CSS. A medida que he trabajado en ello, he aprendido a dominar la semántica y las
-                técnicas fundamentales de estos lenguajes de programación mediante una práctica constante. Considero que
-                este proyecto es una oportunidad para mostrar al público en general mis capacidades y la pasión que
-                siento por lo que he aprendido, y tengo el deseo de seguir aprendiendo, un interés que nació en la
-                preparatoria. Espero que este trabajo pueda servir de ayuda a otros principiantes en el campo de la
-                programación y el diseño de UX, y quiero transmitir el mensaje de que no hay que rendirse frente a los
-                desafíos y y les motive a perseverar en lo que aman hacer.</p>
+            <h4 class="h4">Conclusiones y Recomendaciones</h4>
+            <p class="p">Durante la elaboración de esta propuesta, adquirí un profundo entendimiento de las necesidades
+                específicas y detalladas del entorno donde se requieren este tipo de dispositivos. Este proceso me
+                permitió identificar las variables críticas necesarias para evaluar con precisión el estado actual de la
+                situación a medir. A partir de esta comprensión, pude seleccionar los sensores más adecuados
+                considerando diversas condiciones, como las ambientales, presupuestarias y operativas.
+
+                El diseño del circuito electrónico se delineó cuidadosamente según el comportamiento esperado, así como
+                el diseño
+                exterior del dispositivo se orientó hacia la intuición y simplicidad para facilitar su uso.
+
+                Aunque este proyecto permaneció en fase de propuesta, si se hubieran considerado pasos adicionales,
+                estos habrían incluido la mejora del circuito, la optimización del código de funcionamiento del
+                dispositivo, la realización de pruebas exhaustivas para garantizar un rendimiento óptimo, la creación de
+                un sitio web para visualizar los datos y la posibilidad de desarrollar una aplicación móvil para brindar
+                acceso más práctico al funcionamiento del sistema a través de nuestro dispositivo.</p>
 
             <div class="creditos">
                 <h3>Creditos</h3>
