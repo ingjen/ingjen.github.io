@@ -419,6 +419,7 @@ body {
     line-height: normal;
     text-align: center;
     color: blue;
+    margin-bottom: 0.5rem;
 }
 
 .main .HIFI .link .a:hover{
