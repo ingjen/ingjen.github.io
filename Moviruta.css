@@ -419,7 +419,6 @@ body {
     line-height: normal;
     text-align: center;
     color: blue;
-    padding-bottom: 1rem;
 }
 
 .main .HIFI .link .a:hover{
@@ -434,6 +433,7 @@ body {
 
 .main .HIFI .img{
     padding-top: 2rem;
+    margin-top: 2rem;
     width: auto;
     height: auto;
     display: block;
