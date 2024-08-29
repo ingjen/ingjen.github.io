@@ -161,9 +161,7 @@ body {
     z-index: 1;
 }
 
-.main .portada {
-    background-color: chartreuse;
-}
+.main .portada {}
 
 .main .portada .img {
     width: 100%;
