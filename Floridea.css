@@ -311,7 +311,7 @@ body {
 
 .main .Dis .disimg .DIS1 .img {
     height: auto;
-    width: 95%;
+    width: 60%;
     display: block;
     margin: auto;
 }
@@ -323,7 +323,7 @@ body {
 
 .main .Dis .disimg .DIS2 .img {
     height: auto;
-    width: 95%;
+    width: 60%;
     display: block;
     margin: auto;
 }
@@ -385,7 +385,7 @@ body {
 
 .main .EU .EUC .EUI .img {
     height: auto;
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -515,6 +515,17 @@ body {
     line-height: normal;
     text-align: justify;
     list-style-type: circle;
+    margin-bottom: 0.5rem;
+}
+
+.main .conclu .h5 {
+    font-family: var(--texto);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
     margin-bottom: 0.5rem;
 }
 
