@@ -134,8 +134,8 @@ body {
 
 .header .nav .ul .li .a ::before {
     content: "";
-    position: absolute;|
-    top: 50%;
+    position: absolute;
+    | top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% + 10px);
@@ -213,106 +213,44 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.main .Info .continf .table {
-}
+.main .Info .continf .table {}
 
-.main .Info .continf .table .tr {
-}
+.main .Info .continf .table .tr {}
 
 .main .Info .continf .table .tr .td {
     width: 50%;
 }
 
-.main .Info .continf .table .tr .td .h4 {
-}
+.main .Info .continf .table .tr .td .h4 {}
 
-.main .Info .continf .table .tr .td .p {
-}
+.main .Info .continf .table .tr .td .p {}
 
-.main .OBJ{
-
-}
-
-.main .OBJ .h4{}
-.main .OBJ strong{}
-.main .OBJ .ul{}
-.main .OBJ .ul .li{}
-.main .OBJ .img
-
-.main .Var{}
-.main .Var .h4{}
-.main .Var.p{}
-
-
-
-.main .UR .h4 {
-    font-family: var(--texto);
-    font-size: 1.5625rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-.main .UR .p {
-    font-family: var(--texto);
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: justify;
-    margin-bottom: 0.5rem;
-}
-
-.main .UR .URIMG {
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
-    justify-content: space-around;
-}
-
-.main .UR .URIMG .UR1 {
-    flex: 1;
-    align-items: center;
-}
-
-.main .UR .URIMG .UR1 .img {
-    width: 95%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.main .UR .URIMG .UR2 {
-    flex: 1;
-    align-items: center;
-}
-
-.main .UR .URIMG .UR2 .img {
-    width: 95%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.main .Dis {
+.main .OBJ {
     padding: 2rem;
 }
 
-.main .Dis .h4 {
+.main .OBJ .h4 {
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 
-.main .Dis .p {
+.main .OBJ .h3 {
+    font-family: var(--texto);
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main .OBJ .p {
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -322,115 +260,37 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.main .Dis .disimg {
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
+.main .OBJ .ul {
+    padding-left: 2rem;
 }
 
-.main .Dis .disimg .DIS1 {
-    flex: 1;
-    align-items: center;
-}
-
-.main .Dis .disimg .DIS1 .img {
-    height: auto;
-    width: 95%;
-    display: block;
-    margin: auto;
-}
-
-.main .Dis .disimg .DIS2 {
-    flex: 1;
-    align-items: center;
-}
-
-.main .Dis .disimg .DIS2 .img {
-    height: auto;
-    width: 95%;
-    display: block;
-    margin: auto;
-}
-
-.main .EU {
-    padding: 2rem;
-}
-
-.main .EU .h4 {
+.main .OBJ .ul .li {
     font-family: var(--texto);
-    font-size: 1.5625rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-.main .EU .p {
-    font-family: var(--texto);
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: justify;
-    margin-bottom: 0.5rem;
-}
-
-.main .EU .EUC {
-    display: flex;
-    flex-direction: row;
-    padding: 1.3rem;
-    justify-content: space-around;
-}
-
-.main .EU .EUC .EULI {
-    flex: 2;
-}
-
-.main .EU .EUC .EULI .ul {
-}
-
-.main .EU .EUC .EULI .ul .li {
-    font-family: var(--texto);
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: justify;
     list-style-type: circle;
     margin-bottom: 0.5rem;
-    padding-right: 1rem;
+
 }
 
-.main .EU .EUC .EUI {
-    flex: 1;
-    align-content: center;
-}
-
-.main .EU .EUC .EUI .img {
-    height: auto;
-    width: auto;
-    display: block;
-    margin: auto;
-}
-
-.main .HIFI {
+.main .Var {
     padding: 2rem;
 }
 
-.main .HIFI .h4 {
+.main .Var .h4 {
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 
-.main .HIFI .p {
+.main .Var .p {
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: normal;
@@ -439,35 +299,91 @@ body {
     text-align: justify;
     margin-bottom: 0.5rem;
 }
-.main .HIFI .link{
+
+.main .Sen {
+    padding: 2rem;
+}
+
+.main .Sen .h4 {
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.main .Sen .p {
     font-family: var(--texto);
     font-size: 1.125rem;
-    font-style: oblique;
+    font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: center;
-    color: blue;
+    text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
-.main .HIFI .link .a{
-
-}
-.main .HIFI .link .a:hover{
-    text-decoration: underline;
-    color: var(--rosa);
+.main .DC {
+    padding: 2rem;
 }
 
-.main .HIFI .link .a:hover::before{
-    text-decoration: underline;
-    color: var(--blanco);
+.main .DC .h4 {
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
-.main .HIFI .img{
-    padding-top: 2rem;
-    width: auto;
+.main .DC .p {
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.main .DEXT {
+    padding: 2rem;
+}
+
+.main .DEXT .h4 {
+    font-family: var(--texto);
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.main .DEXT .p {
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.main .DEXT .DEXTIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main .DEXT .DEXTIMG {
+    width: 50%;
     height: auto;
-    display: block;
     margin: auto;
+    display: block;
 }
 
 .main .conclu {
@@ -481,7 +397,6 @@ body {
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 
@@ -495,55 +410,22 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.main .conclu .blockquote {
-    padding-left: 1.3rem;
+.main .conclu .creditos {
+    padding: 2rem;
 }
 
-.main .conclu .blockquote .Frase {
+.main .conclu .creditos .h5 {
     font-family: var(--texto);
-    font-size: 1.125rem;
+    font-size: 1.10rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
-    text-align: justify;
-    margin-bottom: 0.5rem;
-    font-style: italic;
-}
-
-.main .conclu .blockquote .autor {
-    font-family: var(--texto);
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: justify;
+    text-transform: uppercase;
     margin-bottom: 0.5rem;
 }
 
-.main .conclu .p {
-    font-family: var(--texto);
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: justify;
-    margin-bottom: 0.5rem;
-}
+/*Ordenar area de creditos*/
 
-.main .conclu .ul {
-    margin-left: 1.5rem;
-}
-
-.main .conclu .ul .li {
-    font-family: var(--texto);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: justify;
-    list-style-type: circle;
-    margin-bottom: 0.5rem;
-}
 
 .footer {
     position: absolute;
