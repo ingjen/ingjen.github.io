@@ -2,47 +2,30 @@
     --blanco: #F8FAF7;
     --negro: #000000;
     --rosa: #BF06A0;
-    --tipo-titular: 'Inter', sans-serif;
-    --tipo-parrafo: 'Inter', sans-serif;
+    --tipo-texto: 'Inter', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
-    vertical-align: baseline;
 }
 
 img,
 figure {
     max-width: 100%;
-    width: 100%;
-    display: flex;
+    display: block;
     object-fit: cover;
-    object-position: center center;
+    object-position: center;
 }
 
 a {
-    display: block;
     text-decoration: none;
     color: inherit;
-    cursor: auto;
-}
-
-p a {
-    display: inline;
 }
 
 li {
     list-style-type: none;
-}
-
-table,
-tr,
-td {
-    border-spacing: 30px;
-
 }
 
 html {
@@ -65,11 +48,8 @@ button,
 input,
 textarea,
 select {
-    font-family: var(--tipo-parrafo);
-    font-size: 100%;
-    /*min-height: 100vh;*/
+    font-family: var(--tipo-texto);
     background-color: var(--blanco);
-    font-smooth: always;
     -webkit-font-smoothing: antialiasing;
     -moz-osx-font-smothing: grayscale;
 }
@@ -80,52 +60,50 @@ hr {
 }
 
 body {
-    position: relative;
-    font-family: var(--tipo-parrafo);
-    font-size: 100%;
-    /*min-height: 100vh;*/
+    font-family: var(--tipo-texto);
     background-color: var(--negro);
     color: var(--blanco);
-    font-smooth: always;
     -webkit-font-smoothing: antialiasing;
     -moz-ozx-font-smoothing: grayscale;
     cursor: auto;
-
 }
-
 
 .header {
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
-    position: relative;
     width: 100%;
     min-height: 5em;
     margin-top: 1.3rem;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 2;
 }
 
+.header .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .header .nav .ul {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    z-index: 2;
     list-style: none;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
 }
 
 .header .nav .ul .li {
-    z-index: 2;
-    margin-left: 5rem;
-    font-family: var(--tipo-titular);
+    margin: 0 1rem;
+    font-family: var(--texto);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    position: relative;
 }
 
 .header .nav .ul .li .a {
@@ -150,9 +128,10 @@ body {
 }
 
 .header .nav .ul .li .a:hover {
-    background: var(--blanco);
-    border-radius: 100px;
+    background: #F8FAF7;
+    border-radius: 15px;
     color: var(--negro);
+    cursor: pointer;
 }
 
 .header .nav .ul .li .a:hover::before {
@@ -160,7 +139,6 @@ body {
 }
 
 .main {
-    background-color: aqua;
     position: relative;
     z-index: 1;
 }
@@ -168,33 +146,38 @@ body {
 .main .AM {
     background-color: var(--negro);
     display: flex;
-    flex-direction: row;
     width: 100%;
     align-items: flex-start;
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+
+.main .AM .C1,
+.main .AM .C2 {
+    padding: 1.3rem;
 }
 
 .main .AM .C1 {
     flex: 2;
-    padding: 1.3rem;
 }
 
-.main .AM .C1 .h2 {
-    font-family: Inter;
+.main .AM .C1 .h2,
+.main .AM .C2 .Contact .h3 {
+    font-family: var(--tipo-texto);
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
     text-align: left;
 }
 
-.main .AM .C1 .p {
-    font-family: Inter;
+.main .AM .C1 .p,
+.main .AM .C2 .Contact .p,
+.main .AM .C2 .Contact .tipo,
+.main .AM .C2 .Contact .tipo .mail,
+.main .AM .C2 .Contact .h4 {
+    font-family: var(--tipo-texto);
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-bottom: 1.3rem;
     text-align: left;
 }
@@ -203,81 +186,75 @@ body {
     color: var(--rosa);
 }
 
-.main .AM .C1 .blockquote {}
-
 .main .AM .C1 .blockquote .Frase {
     color: var(--rosa);
-    font-family: Inter;
+    font-family: var(--tipo-texto);
     font-size: 20px;
     font-style: italic;
     font-weight: 600;
-    line-height: normal;
-    margin: 1.3rem;
+    margin: 1.3rem 0;
 }
-
 
 .main .AM .C1 .blockquote .autor {
-    font-family: Inter;
+    font-family: var(--tipo-texto);
     font-size: 15px;
     font-style: italic;
-    font-weight: 400;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
 }
 
-.main .AM .C1 .skills {}
+.main .AM .C1 .skills{
+margin-top: 2rem;
+}
 
-.main .AM .C1 .skills .h3 {
+.main .AM .C1 .skills h3 {
     color: var(--rosa);
-    font-family: Inter;
+    font-family: var(--tipo-texto);
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
     text-align: left;
 }
 
-.main .AM .C1 .skills .table {}
+.main .AM .C1 .skills table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
 
-.main .AM .C1 .skills .table .tr {}
+.main .AM .C1 .skills td {
+    text-align: left;
+    vertical-align: top;
+    padding: 1rem;
+}
 
-.main .AM .C1 .skills .table .tr .td {}
-
-.main .AM .C1 .skills .table .tr .td .h4 {
-    font-family: Inter;
-    font-size: 22px;
-    font-style: bold;
+.main .AM .C1 .skills h4{
+    font-family: var(--tipo-texto);
+    font-size: 24px;
     font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.main .AM .C1 .skills .table .tr .td .ul {}
+.main .AM .C1 .skills ul{
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 0;
+}
 
-.main .AM .C1 .skills .table .tr .td .ul li {
-    list-style: circle;
-    padding: 0.2rem;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1rem;
-    text-align: left;
+.main .AM .C1 .skills ul li{
+    margin-bottom: 0.8rem;
+    font-family: var(--tipo-texto);
+    font-size: 18px;
+    line-height: 1.5;
+    list-style-type: disc;
 }
 
 .main .AM .C2 {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1.3rem;
-}
-
-.main .AM .C2 .perfil {
     display: flex;
     flex-direction: column;
 }
@@ -286,8 +263,6 @@ body {
     width: 100%;
     height: 400px;
 }
-
-.main .AM .C2 .perfil .a {}
 
 .main .AM .C2 .perfil .a .button {
     border: 0.15rem solid var(--blanco);
@@ -300,79 +275,19 @@ body {
     background-color: var(--negro);
     margin: 1rem;
     padding: 1rem;
-
-}
-
-.main .AM .C2 .Contact {}
-
-.main .AM .C2 .Contact .h3 {
-    color: var(--rosa);
-    font-family: Inter;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-bottom: 1.3rem;
-    text-align: left;
-}
-
-.main .AM .C2 .Contact .p {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
-}
-
-.main .AM .C2 .Contact .tipo {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
-}
-
-.main .AM .C2 .Contact .tipo .mail {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
-    text-decoration: underline;
-}
-
-.main .AM .C2 .Contact .tipo .mail .a {}
-
-.main .AM .C2 .Contact .h4 {
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
 }
 
 .main .AM .C2 .Contact .rrss {
     width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
+    flex-flow: wrap;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .main .AM .C2 .Contact .rrss .li {
     margin-right: 1em;
 }
-
-.main .AM .C2 .Contact .rrss .li .a {}
 
 .main .AM .C2 .Contact .rrss .li .a .svg {
     width: 2rem;
@@ -399,7 +314,7 @@ body {
     text-transform: uppercase;
 }
 
-/*Agregar Mouse y animación*/
+/*Animación*/
 @keyframes wipe-in-right {
     from {
         clip-path: inset(0 100% 0 0);
@@ -412,22 +327,4 @@ body {
 
 [transition-style="in:wipe:right"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-}
-
-#cursor {
-    width: 3.5em;
-    height: 3.5em;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    pointer-events: none;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-}
-
-#cursor.mini {
-    transform: scale(0.5);
-    transition: all .1s linear;
 }

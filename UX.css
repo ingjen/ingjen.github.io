@@ -8,40 +8,24 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
-    vertical-align: baseline;
 }
 
 img,
 figure {
     max-width: 100%;
-    width: 100%;
-    display: flex;
+    display: block;
     object-fit: cover;
-    object-position: center center;
+    object-position: center;
 }
 
 a {
-    display: block;
     text-decoration: none;
     color: inherit;
-    cursor: auto;
-}
-
-p a {
-    display: inline;
 }
 
 li {
-    list-style-type: none;
-}
-
-table,
-tr,
-td {
-    border-spacing: 40px;
-
+    list-style: none;
 }
 
 html {
@@ -65,10 +49,7 @@ input,
 textarea,
 select {
     font-family: var(--texto);
-    font-size: 100%;
-    min-height: 100vh;
     background-color: var(--blanco);
-    font-smooth: always;
     -webkit-font-smoothing: antialiasing;
     -moz-osx-font-smothing: grayscale;
 }
@@ -79,12 +60,9 @@ hr {
 }
 
 body {
-    position: relative;
     font-family: var(--texto);
-    font-size: 100%;
     background-color: var(--negro);
     color: var(--blanco);
-    font-smooth: always;
     -webkit-font-smoothing: antialiasing;
     -moz-ozx-font-smoothing: grayscale;
     cursor: auto;
@@ -95,34 +73,38 @@ body {
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
-    position: relative;
     width: 100%;
     min-height: 5em;
     margin-top: 1.3rem;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 2;
 }
 
+.header .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .header .nav .ul {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    z-index: 2;
     list-style: none;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
 }
 
 .header .nav .ul .li {
-    z-index: 2;
-    margin-left: 5rem;
+    margin: 0 1rem;
     font-family: var(--texto);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    position: relative;
 }
 
 .header .nav .ul .li .a {
@@ -135,21 +117,22 @@ body {
 .header .nav .ul .li .a ::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% + 10px);
     height: 100%;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: background-color 0.3s;
     z-index: -1;
 }
 
 .header .nav .ul .li .a:hover {
     background: #F8FAF7;
-    border-radius: 100px;
+    border-radius: 15px;
     color: var(--negro);
+    cursor: pointer;
 }
 
 .header .nav .ul .li .a:hover::before {
@@ -163,7 +146,6 @@ body {
 
 .main .UX {
     display: flex;
-    flex-direction: row;
     width: 100%;
     align-items: center;
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
@@ -174,38 +156,30 @@ body {
     padding: 1.3rem;
 }
 
-.main .UX .CONTUX .h2 {
+.main .UX .CONTUX h2,
+.main .UX .CONTUX p,
+.main .UX .CONTUX h4 {
     font-family: var(--texto);
+    text-align: left;
+    margin-bottom: 1.3rem;
+}
+
+.main .UX .CONTUX h2 {
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 1.3rem;
-    text-align: left;
 }
 
-.main .UX .CONTUX .p {
-    font-family: var(--texto);
+.main .UX .CONTUX p {
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-    margin-bottom: 1.3rem;
-    text-align: left;
-
 }
 
-.main .UX .CONTUX .h4 {
+.main .UX .CONTUX h4 {
     color: var(--rosa);
-    font-family: Inter;
     font-size: 25px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 1.3rem;
-    text-align: left;
 }
 
 .main .UX .CONTPRO {
@@ -217,21 +191,21 @@ body {
 }
 
 .main .UX .CONTPRO .num {
-    margin: 0 0.625rem 0 0;
+    margin-right: 0.2rem;
     font-family: var(--texto);
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
 }
 
 .main .UX .CONTPRO .img {
     width: 500px;
     height: 200px;
+    transition: filter 0.3s;
 }
-.main .UX .CONTPRO .img:hover{
-    filter: opacity(.5);
+
+.main .UX .CONTPRO .img:hover {
+    filter: opacity(0.5);
 }
 
 .main .UX .CONTPRO article {
@@ -240,7 +214,6 @@ body {
     align-items: center;
     margin-bottom: 1.3rem;
 }
-
 
 .footer {
     position: absolute;
@@ -253,15 +226,13 @@ body {
 
 .footer .span {
     color: var(--blanco);
-    text-align: center;
     font-family: var(--texto);
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
 }
 
+/*Animación*/
 @keyframes wipe-in-right {
     from {
         clip-path: inset(0 100% 0 0);

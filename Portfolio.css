@@ -95,34 +95,38 @@ body {
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
-    position: relative;
     width: 100%;
     min-height: 5em;
     margin-top: 1.3rem;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 2;
 }
 
+.header .nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .header .nav .ul {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    z-index: 2;
     list-style: none;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
 }
 
 .header .nav .ul .li {
-    z-index: 2;
-    margin-left: 5rem;
+    margin: 0 1rem;
     font-family: var(--texto);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    position: relative;
 }
 
 .header .nav .ul .li .a {
@@ -134,7 +138,7 @@ body {
 
 .header .nav .ul .li .a ::before {
     content: "";
-    position: absolute;|
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -148,8 +152,9 @@ body {
 
 .header .nav .ul .li .a:hover {
     background: #F8FAF7;
-    border-radius: 100px;
+    border-radius: 15px;
     color: var(--negro);
+    cursor: pointer;
 }
 
 .header .nav .ul .li .a:hover::before {
@@ -161,9 +166,7 @@ body {
     z-index: 1;
 }
 
-.main .portada {
-    background-color: chartreuse;
-}
+.main .portada {}
 
 .main .portada .img {
     width: 100%;
@@ -213,21 +216,17 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.main .Info .continf .table {
-}
+.main .Info .continf .table {}
 
-.main .Info .continf .table .tr {
-}
+.main .Info .continf .table .tr {}
 
 .main .Info .continf .table .tr .td {
     width: 50%;
 }
 
-.main .Info .continf .table .tr .td .h4 {
-}
+.main .Info .continf .table .tr .td .h4 {}
 
-.main .Info .continf .table .tr .td .p {
-}
+.main .Info .continf .table .tr .td .p {}
 
 .main .UR {
     padding: 2rem;
@@ -376,8 +375,7 @@ body {
     flex: 2;
 }
 
-.main .EU .EUC .EULI .ul {
-}
+.main .EU .EUC .EULI .ul {}
 
 .main .EU .EUC .EULI .ul .li {
     font-family: var(--texto);
@@ -427,7 +425,8 @@ body {
     text-align: justify;
     margin-bottom: 0.5rem;
 }
-.main .HIFI .link{
+
+.main .HIFI .link {
     font-family: var(--texto);
     font-size: 1.125rem;
     font-style: oblique;
@@ -437,22 +436,21 @@ body {
     color: blue;
 }
 
-.main .HIFI .link .a{
+.main .HIFI .link .a {}
 
-}
-.main .HIFI .link .a:hover{
+.main .HIFI .link .a:hover {
     text-decoration: underline;
     color: var(--rosa);
 }
 
-.main .HIFI .link .a:hover::before{
+.main .HIFI .link .a:hover::before {
     text-decoration: underline;
     color: var(--blanco);
 }
 
-.main .HIFI .img{
+.main .HIFI .img {
     padding-top: 2rem;
-    width: auto;
+    width: 60%;
     height: auto;
     display: block;
     margin: auto;
@@ -544,11 +542,8 @@ body {
 
 .footer .span {
     color: var(--blanco);
-    text-align: center;
     font-family: var(--texto);
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
 }
