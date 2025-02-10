@@ -18,6 +18,9 @@
 <body class="body">
     <header class="header">
         <nav class="nav">
+            <button class="menu-toggle" aria-label="abrir menu">
+            ☰
+            </button>
             <ul class="ul">
                 <li class="li"><a href="index.html" title="Inicio" class="a" target="_self"
                         rel="noopener noreferrer">INICIO</a></li>
@@ -212,6 +215,16 @@
     <footer class="footer">
         <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
+        
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("active"); // Activa o desactiva el menú
+            });
+        });
+        </script>
 </body>
 
 </html>
