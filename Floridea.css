@@ -101,35 +101,6 @@ body {
     left: 10px;
 }
 
-/* 📌 Ajustes para móviles */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Se muestra en pantallas pequeñas */
-    }
-
-    .header .nav .ul {
-        display: none; /* Se oculta el menú inicialmente */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: var(--negro);
-        text-align: center;
-        padding: 10px 0;
-        border-top: 2px solid white;
-    }
-
-    .header .nav .ul .li {
-        margin: 10px 0;
-    }
-
-    /* 📌 Clase que activará el menú */
-    .nav.active .ul {
-        display: flex;
-    }
-}
-
 .header .nav .ul {
     display: flex;
     justify-content: space-between;
@@ -372,3 +343,31 @@ body {
     text-transform: uppercase;
 }
 
+/* 📌 Ajustes para móviles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Se muestra en pantallas pequeñas */
+    }
+
+    .header .nav .ul {
+        display: none; /* Se oculta el menú inicialmente */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--negro);
+        text-align: center;
+        padding: 10px 0;
+        border-top: 2px solid white;
+    }
+
+    .header .nav .ul .li {
+        margin: 10px 0;
+    }
+
+    /* 📌 Clase que activará el menú */
+    .nav.active .ul {
+        display: flex;
+    }
+}
