@@ -371,3 +371,119 @@ body {
         display: flex;
     }
 }
+
+/* 📌 General: Ajuste de texto y elementos para pantallas pequeñas */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column; /* Hace que el header se apile en pantallas más pequeñas */
+        min-height: auto;
+        padding: 10px 0;
+    }
+
+    .header .nav .ul {
+        flex-direction: column; /* Menú en columna en vez de horizontal */
+        align-items: center;
+    }
+
+    .header .nav .ul .li {
+        margin: 5px 0; /* Espacio entre elementos del menú */
+    }
+
+    .main .Info {
+        flex-direction: column; /* Hace que la imagen y texto se apilen */
+        text-align: center;
+    }
+
+    .main .Info .contimg,
+    .main .Info .continf {
+        flex: none;
+        width: 100%;
+    }
+
+    .main .UR .URIMG,
+    .main .Dis .disimg,
+    .main .EU .EUC {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main .EU .EUC .EUI {
+        text-align: center;
+    }
+}
+
+/* 📌 Para teléfonos: Pantallas menores a 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        padding: 5px 0;
+    }
+
+    .main .portada .img {
+        height: 15rem; /* Reducir la imagen de portada */
+    }
+
+    .main .Info,
+    .main .UR,
+    .main .Dis,
+    .main .EU,
+    .main .HIFI,
+    .main .conclu {
+        padding: 1rem;
+    }
+
+    .main .Info .continf .h4,
+    .main .UR .h4,
+    .main .Dis .h4,
+    .main .EU .EULI .ul .li,
+    .main .HIFI .h4,
+    .main .conclu .h4 {
+        font-size: 1.2rem;
+    }
+
+    .main .Info .continf .p,
+    .main .UR .p,
+    .main .Dis .p,
+    .main .EU .EULI .ul .li,
+    .main .HIFI .p,
+    .main .conclu .p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .footer {
+        position: relative;
+        padding: 1rem 0;
+    }
+}
+
+/* 📌 Para teléfonos pequeños: Pantallas menores a 480px */
+@media (max-width: 480px) {
+    .main .portada .img {
+        height: 12rem;
+    }
+
+    .header {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .main .Info .continf .h4 {
+        font-size: 1rem;
+    }
+
+    .main .Info .continf .p {
+        font-size: 0.9rem;
+    }
+
+    .footer .span {
+        font-size: 12px;
+    }
+}
