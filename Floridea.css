@@ -225,9 +225,8 @@ body {
 }
 
 .main .Info .continf .table {
-    border-collapse: collapse;
     width: 100%;
-    margin: 1rem 0;
+    border-collapse: collapse;
     font-family: var(--texto);
     background-color: #111;
     color: var(--blanco);
@@ -235,43 +234,36 @@ body {
 
 /* Estilos para las filas */
 .main .Info .continf .table .tr {
-    display: table-row;
+    display: flex;
+    justify-content: space-between; /* Distribuye equitativamente */
+    gap: 10px;
 }
 
-/* Alternar colores en filas para mejorar legibilidad */
-.main .Info .continf .table .tr:nth-child(even) .td {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Estilos para celdas */
+/* Contenedor de cada celda para que los títulos queden arriba */
 .main .Info .continf .table .td {
+    flex: 1; /* Que cada columna tenga el mismo tamaño */
+    display: flex;
+    flex-direction: column;
     padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    text-align: left;
-    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Línea separadora */
 }
 
-/* Encabezados (opcional, si tienes th en la tabla) */
-.main .Info .continf .table .th {
-    background-color: var(--rosa);
-    color: var(--blanco);
+/* Títulos dentro de las celdas */
+.main .Info .continf .table .td .title {
     font-weight: bold;
-    text-transform: uppercase;
-    padding: 15px;
-    text-align: center;
+    border-bottom: 2px solid var(--blanco);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* Ajuste del ancho de la primera columna */
+/* Ajuste del ancho de las columnas */
 .main .Info .continf .table .td:first-child {
-    font-weight: bold;
-    width: 40%;
+    width: 50%;
 }
 
-/* Alinear el contenido de la última columna a la derecha */
 .main .Info .continf .table .td:last-child {
-    text-align: right;
+    width: 50%;
 }
-
 
 .main .UR,
 .main .Dis,
