@@ -225,7 +225,7 @@ body {
 }
 
 .main .Info .continf .table {
-    border-collapse: collapse; /* Asegúrate de que border-spacing funcione */
+    border-collapse: collapse;
     width: 100%;
     margin: 1rem 0;
     font-family: var(--texto);
@@ -233,38 +233,43 @@ body {
     color: var(--blanco);
 }
 
+/* Estilos para las filas */
 .main .Info .continf .table .tr {
     display: table-row;
 }
 
-.main .Info .continf .table .tr:nth-child(even)td{
+/* Alternar colores en filas para mejorar legibilidad */
+.main .Info .continf .table .tr:nth-child(even) .td {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Estilos para celdas */
 .main .Info .continf .table .td {
-    padding: 15px; /* Espacio interno a las celdas */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Opcional: Agrega borde a las celdas */
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: left;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-td:first-child {
+/* Encabezados (opcional, si tienes th en la tabla) */
+.main .Info .continf .table .th {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Ajuste del ancho de la primera columna */
+.main .Info .continf .table .td:first-child {
     font-weight: bold;
     width: 40%;
 }
 
-td:last-child {
+/* Alinear el contenido de la última columna a la derecha */
+.main .Info .continf .table .td:last-child {
     text-align: right;
-}
-/* Opcional: Agrega estilos para las celdas de encabezado, si es necesario */
-.main .Info .continf .table .th {
-    padding: 15px; /* Espacio interno a las celdas de encabezado */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Opcional: Agrega borde a las celdas de encabezado */
-    text-align: left;
-    background-color: var(--rosa); /* Opcional: Color de fondo a las celdas de encabezado */
-    color: var(--blanco);
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 
