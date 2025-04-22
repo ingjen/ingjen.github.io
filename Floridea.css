@@ -14,8 +14,9 @@
 img,
 figure {
     max-width: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -32,26 +33,17 @@ html {
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: inherit;
     font-weight: inherit;
     font-size: inherit;
 }
 
-form,
-button,
-input,
-textarea,
-select {
+form, button, input, textarea, select {
     font-family: var(--texto);
     background-color: var(--blanco);
-    -webkit-font-smoothing: antialiasing;
-    -moz-osx-font-smothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 hr {
@@ -63,12 +55,10 @@ body {
     font-family: var(--texto);
     background-color: var(--negro);
     color: var(--blanco);
-    -webkit-font-smoothing: antialiasing;
-    -moz-ozx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     cursor: auto;
-
 }
-
 
 .header {
     background-color: var(--negro);
@@ -103,7 +93,6 @@ body {
     font-family: var(--texto);
     font-size: 16px;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     position: relative;
 }
@@ -115,7 +104,7 @@ body {
     transition: color 0.3s;
 }
 
-.header .nav .ul .li .a ::before {
+.header .nav .ul .li .a::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -143,52 +132,77 @@ body {
 .main {
     position: relative;
     z-index: 1;
+    padding-inline: 1.5rem;
+
+}
+
+.main hr {
+    width: 90%;
+    margin: auto;
+}
+
+.main .h4 {
+    margin-top: 1rem; /* Agrega un espacio de 1rem (puedes ajustarlo según lo necesites) */
 }
 
 .main .portada .img {
     width: 100%;
     height: 25rem;
+    object-fit: cover;
 }
 
-.main .Info {
+/* Reglas generales para secciones con imágenes y texto */
+.main .Info,
+.main .UR .URIMG,
+.main .Dis .disimg,
+.main .EU .EUC {
     display: flex;
     padding: 1.3rem;
+    gap: 1.5rem;
 }
 
 .main .Info .contimg,
-.main .Info .continf {
-    padding: 1.3rem;
-}
-
-.main .Info .contimg{
+.main .UR .URIMG .UR1,
+.main .UR .URIMG .UR2,
+.main .Dis .disimg .DIS1,
+.main .Dis .disimg .DIS2,
+.main .EU .EUC .EUI {
     flex: 1;
     text-align: center;
+    align-items: center;
 }
 
-.main .Info .contimg .img,
-.main .UR .URIMG .UR1 .img,
-.main .UR.URIMG .UR2 .img,
-.main .Dis .disimg .DIS1 .img,
-.main .Dis .disimg .DIS2 .img,
-.main .EU .EUI .img,
-.main .HIFI .img {
-    width: auto;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.main .Info .continf {
+.main .Info .continf,
+.main .EU .EUC .EULI {
     flex: 2;
 }
 
-.main .Info .continf .h4,
-.main .UR .h4,
-.main .Dis .h4,
-.main .EU .EULI .ul .li,
-.main .HIFI .h4,
-.main .conclu .h4,
-.main .conclu .h5 {
+/* Imágenes */
+.main .Info .contimg .img,
+.main .UR .URIMG .UR1 .img,
+.main .UR .URIMG .UR2 .img,
+.main .EU .EUI .img,
+.main .HIFI .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain; /* Asegura que la imagen se vea completa */
+}
+
+.main .Dis .disimg .DIS1 .img,
+.main .Dis .disimg .DIS2 .img {
+    width: 100%;           /* Asegura que las imágenes ocupen todo el ancho */
+    height: 400px;         /* Mantiene una altura fija para todas las imágenes */
+    object-fit: contain;   /* Hace que las imágenes se ajusten sin recortes */
+    object-position: center; /* Centra la imagen dentro del contenedor */
+    border-radius: 10px;   /* Opcional, si deseas bordes redondeados */
+    margin-bottom: 1rem;   /* Espacio debajo de las imágenes */
+}
+
+
+/* Texto general */
+.main .h4 {
     font-family: var(--texto);
     font-size: 1.5625rem;
     font-weight: 600;
@@ -197,12 +211,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.main .Info .continf .p,
-.main .UR .p,
-.main .Dis .p,
+.main .p,
 .main .EU .EULI .ul .li,
-.main .HIFI .p,
-.main .conclu .p,
 .main .conclu .blockquote .Frase,
 .main .conclu .blockquote .autor {
     font-family: var(--texto);
@@ -212,96 +222,75 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Tabla */
 .main .Info .continf .table {
-    border-spacing: 0 10px; /* Espacio de 10px entre filas */
-    border-collapse: separate; /* Asegúrate de que border-spacing funcione */
+    border-spacing: 0 10px;
+    border-collapse: separate;
     width: 100%;
 }
 
-.main .Info .continf .table .tr {
-    display: table-row;
-}
-
-.main .Info .continf .table .td {
-    padding: 10px; /* Espacio interno a las celdas */
-    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas */
-}
-
-/* Opcional: Agrega estilos para las celdas de encabezado, si es necesario */
+.main .Info .continf .table .td,
 .main .Info .continf .table .th {
-    padding: 10px; /* Espacio interno a las celdas de encabezado */
-    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas de encabezado */
-    background-color: #f4f4f4; /* Opcional: Color de fondo a las celdas de encabezado */
+    padding: 10px;
 }
 
-.main .UR,
-.main .Dis,
-.main .EU,
-.main .HIFI,
-.main .conclu {
-    padding: 2rem;
-}
-
-.main .UR .URIMG {
-    display: flex;
-    padding: 1.3rem;
-    justify-content: space-around;
-}
-
-.main .UR .URIMG .UR1,
-.main .UR .URIMG .UR2,
-.main .Dis .disimg .DIS1,
-.main .Dis .disimg .DIS2 {
-    flex: 1;
-    align-items: center;
-}
-
-.main .EU .EUC {
-    display: flex;
-    padding: 1.3rem;
-    justify-content: space-around;
-}
-
-.main .EU .EUC .EULI {
-    flex: 2;
-}
-
-.main .EU .EUC .EUI {
-    flex: 1;
-    align-content: center;
-}
-
-.main .EU .EUC .EULI .ul .li {
+/* Listas */
+.main .EU .EULI .ul .li,
+.main .conclu .ul .li {
     list-style-type: circle;
     margin-bottom: 0.5rem;
     padding-right: 1rem;
 }
 
+/* Links */
 .main .HIFI .link {
     font-family: var(--texto);
-    font-size: 1.125rem;
-    font-style: oblique;
-    font-weight: 400;
+    font-size: 1.25rem;
+    font-weight: 600;
     text-align: center;
-    color: blue;
-}
-
-.main .HIFI .link .a:hover {
-    text-decoration: underline;
     color: var(--rosa);
+    margin-bottom: 1rem;
+    display: block;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
 }
 
+.main .HIFI .link:hover {
+    color: #FF69B4; /* Un rosa más brillante */
+    cursor: pointer;
+}
+
+/*Behance*/
+.main .HIFI .iframe-container {
+    display: flex;
+    flex-direction: column; /* 👈 apila el h4 encima del iframe */
+    align-items: center; /* 👈 centra todo horizontalmente */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.main .HIFI .iframe-container .h4 {
+    margin-bottom: 1rem; /* 👈 espacio entre el título y el iframe */
+}
+
+.main .HIFI .iframe-container iframe {
+    width: 80%;
+    max-width: 960px;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Conclusión */
 .main .conclu .blockquote {
     padding-left: 1.3rem;
 }
 
 .main .conclu .ul {
     margin-left: 1.5rem;
-}
-
-.main .conclu .ul .li {
-    list-style-type: circle;
-    margin-bottom: 0.5rem;
 }
 
 .main .conclu .h5 {
@@ -314,8 +303,9 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Footer */
 .footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 1.5rem 0;
     text-align: center;
