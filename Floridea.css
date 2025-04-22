@@ -46,11 +46,6 @@ form, button, input, textarea, select {
     -moz-osx-font-smoothing: grayscale;
 }
 
-hr {
-    display: block;
-    color: aliceblue;
-}
-
 body {
     font-family: var(--texto);
     background-color: var(--negro);
@@ -78,6 +73,7 @@ body {
     justify-content: center;
     width: 100%;
 }
+
 /* 📌 Estilos generales del botón hamburguesa */
 .menu-toggle {
     display: none; /* Se oculta en pantallas grandes */
@@ -145,12 +141,16 @@ body {
     position: relative;
     z-index: 1;
     padding-inline: 1.5rem;
-
 }
 
 .main hr {
+    display: block;
+    color: aliceblue;
     width: 90%;
     margin: auto;
+    border: none;  /* Evita bordes adicionales */
+    height: 2px;   /* Controla el grosor */
+    background-color: #FFF; /* Puedes cambiar el color si es necesario */
 }
 
 .main .h4 {
@@ -241,7 +241,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     font-family: var(--texto);
-    background-color: #111;
+    background-color: var(--negro);
     color: var(--blanco);
 }
 
@@ -323,11 +323,11 @@ body {
     cursor: pointer;
 }
 
-/*Behance*/
+/* Behance */
 .main .HIFI .iframe-container {
     display: flex;
-    flex-direction: column; /* 👈 apila el h4 encima del iframe */
-    align-items: center; /* 👈 centra todo horizontalmente */
+    flex-direction: column; /* apila el h4 encima del iframe */
+    align-items: center; /* centra todo horizontalmente */
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -335,7 +335,7 @@ body {
 }
 
 .main .HIFI .iframe-container .h4 {
-    margin-bottom: 1rem; /* 👈 espacio entre el título y el iframe */
+    margin-bottom: 1rem; /* espacio entre el título y el iframe */
 }
 
 .main .HIFI .iframe-container iframe {
@@ -351,8 +351,18 @@ body {
     padding-left: 1.3rem;
 }
 
-.main .conclu .ul {
+.main .conclu .proximos-pasos {
+    list-style-type: circle; /* Aquí se define el tipo de viñeta */
     margin-left: 1.5rem;
+    padding-left: 1rem;
+}
+
+.main .conclu .proximos-pasos li {
+    font-family: var(--texto);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 0.5rem;
 }
 
 .main .conclu .h5 {
