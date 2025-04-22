@@ -78,6 +78,18 @@ body {
     justify-content: center;
     width: 100%;
 }
+/* 📌 Estilos generales del botón hamburguesa */
+.menu-toggle {
+    display: none; /* Se oculta en pantallas grandes */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
 .header .nav .ul {
     display: flex;
@@ -224,19 +236,69 @@ body {
 
 /* Tabla */
 .main .Info .continf .table {
-    border-spacing: 0 10px;
-    border-collapse: separate;
+    border-spacing: 0 10px; /* Espacio de 10px entre filas */
+    border-collapse: separate; /* Asegúrate de que border-spacing funcione */
     width: 100%;
+    border-collapse: collapse;
+    font-family: var(--texto);
+    background-color: #111;
+    color: var(--blanco);
 }
 
-.main .Info .continf .table .td,
+.main .Info .continf .table .tr {
+    display: table-row;
+}
+
+.main .Info .continf .table .td {
+    padding: 10px; /* Espacio interno a las celdas */
+    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas */
+}
+
+/* Opcional: Agrega estilos para las celdas de encabezado, si es necesario */
 .main .Info .continf .table .th {
-    padding: 10px;
+    padding: 10px; /* Espacio interno a las celdas de encabezado */
+    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas de encabezado */
+    background-color: #f4f4f4; /* Opcional: Color de fondo a las celdas de encabezado */
 }
 
-/* Listas */
-.main .EU .EULI .ul .li,
-.main .conclu .ul .li {
+.main .UR,
+.main .Dis,
+.main .EU,
+.main .HIFI,
+.main .conclu {
+    padding: 2rem;
+}
+
+.main .UR .URIMG {
+    display: flex;
+    padding: 1.3rem;
+    justify-content: space-around;
+}
+
+.main .UR .URIMG .UR1,
+.main .UR .URIMG .UR2,
+.main .Dis .disimg .DIS1,
+.main .Dis .disimg .DIS2 {
+    flex: 1;
+    align-items: center;
+}
+
+.main .EU .EUC {
+    display: flex;
+    padding: 1.3rem;
+    justify-content: space-around;
+}
+
+.main .EU .EUC .EULI {
+    flex: 2;
+}
+
+.main .EU .EUC .EUI {
+    flex: 1;
+    align-content: center;
+}
+
+.main .EU .EUC .EULI .ul .li {
     list-style-type: circle;
     margin-bottom: 0.5rem;
     padding-right: 1rem;
