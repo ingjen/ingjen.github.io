@@ -33,13 +33,22 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: inherit;
     font-weight: inherit;
     font-size: inherit;
 }
 
-form, button, input, textarea, select {
+form,
+button,
+input,
+textarea,
+select {
     font-family: var(--texto);
     background-color: var(--blanco);
     -webkit-font-smoothing: antialiased;
@@ -56,6 +65,7 @@ body {
 }
 
 .header {
+    font-family: var(--texto);
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
@@ -72,19 +82,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-/* 📌 Estilos generales del botón hamburguesa */
-.menu-toggle {
-    display: none; /* Se oculta en pantallas grandes */
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
 }
 
 .header .nav .ul {
@@ -105,35 +102,31 @@ body {
     position: relative;
 }
 
-.header .nav .ul .li .a {
+.header .nav .ul .li .nav-link {
     text-decoration: none;
     color: white;
     position: relative;
     transition: color 0.3s;
 }
 
-.header .nav .ul .li .a::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 10px);
-    height: 100%;
-    background-color: transparent;
-    border-radius: 15px;
-    transition: background-color 0.3s;
-    z-index: -1;
+.a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.header .nav .ul .li .a:hover {
+.a:hover {
+    color: var(--rosa);
+}
+
+.header .nav .ul .li .nav-link:hover {
     background: #F8FAF7;
     border-radius: 15px;
     color: var(--negro);
     cursor: pointer;
 }
 
-.header .nav .ul .li .a:hover::before {
+.header .nav .ul .li .nav-link:hover::before {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -143,24 +136,64 @@ body {
     padding-inline: 1.5rem;
 }
 
+.main .back {
+    display: inline-block;
+    margin: 1rem 0 2rem 1.5rem;
+}
+
+.main .back .button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+    border-radius: 15px;
+    font-family: var(--texto);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main .back .button:hover {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+.main .back .button svg {
+    width: 16px;
+    height: 16px;
+}
+
 .main hr {
     display: block;
     color: aliceblue;
     width: 90%;
     margin: auto;
-    border: none;  /* Evita bordes adicionales */
-    height: 2px;   /* Controla el grosor */
-    background-color: #FFF; /* Puedes cambiar el color si es necesario */
+    border: none;
+    height: 2px;
+    background-color: #FFF;
 }
 
 .main .h4 {
-    margin-top: 1rem; /* Agrega un espacio de 1rem (puedes ajustarlo según lo necesites) */
+    margin-top: 1rem;
 }
+
+.main .img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
 
 .main .portada .img {
     width: 100%;
     height: 25rem;
     object-fit: cover;
+    object-position: center;
 }
 
 /* Reglas generales para secciones con imágenes y texto */
@@ -172,6 +205,14 @@ body {
     padding: 1.3rem;
     gap: 1.5rem;
 }
+
+
+.main .Dis .disimg .DIS1 .img,
+.main .Dis .disimg .DIS2 .img {
+    height: auto;
+    max-height: 400px;
+}
+
 
 .main .Info .contimg,
 .main .UR .URIMG .UR1,
@@ -199,34 +240,50 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
-    object-fit: contain; /* Asegura que la imagen se vea completa */
+    object-fit: contain;
 }
 
 .main .Dis .disimg .DIS1 .img,
 .main .Dis .disimg .DIS2 .img {
-    width: 100%;           /* Asegura que las imágenes ocupen todo el ancho */
-    height: 400px;         /* Mantiene una altura fija para todas las imágenes */
-    object-fit: contain;   /* Hace que las imágenes se ajusten sin recortes */
-    object-position: center; /* Centra la imagen dentro del contenedor */
-    border-radius: 10px;   /* Opcional, si deseas bordes redondeados */
-    margin-bottom: 1rem;   /* Espacio debajo de las imágenes */
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 
 /* Texto general */
 .main .h4 {
-    font-family: var(--texto);
-    font-size: 1.5625rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    text-align: left;
+    color: var(--blanco);
 }
 
-.main .p,
-.main .EU .EULI .ul .li,
-.main .conclu .blockquote .Frase,
+.main .p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.main .conclu .blockquote {
+    border-left: 3px solid var(--rosa);
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.main .conclu .blockquote .Frase {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
 .main .conclu .blockquote .autor {
+    font-weight: 600;
+    text-align: right;
+}
+
+.main .EU .EULI .ul .li {
     font-family: var(--texto);
     font-size: 1.125rem;
     font-weight: 400;
@@ -236,30 +293,26 @@ body {
 
 /* Tabla */
 .main .Info .continf .table {
-    border-spacing: 0 10px; /* Espacio de 10px entre filas */
-    border-collapse: separate; /* Asegúrate de que border-spacing funcione */
     width: 100%;
     border-collapse: collapse;
-    font-family: var(--texto);
-    background-color: var(--negro);
-    color: var(--blanco);
+    margin: 1rem 0;
 }
 
 .main .Info .continf .table .tr {
-    display: table-row;
+    border-bottom: 1px solid #ddd;
 }
 
 .main .Info .continf .table .td {
-    padding: 10px; /* Espacio interno a las celdas */
-    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas */
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
 }
 
-/* Opcional: Agrega estilos para las celdas de encabezado, si es necesario */
-.main .Info .continf .table .th {
-    padding: 10px; /* Espacio interno a las celdas de encabezado */
-    border: 1px solid #ddd; /* Opcional: Agrega borde a las celdas de encabezado */
-    background-color: #f4f4f4; /* Opcional: Color de fondo a las celdas de encabezado */
+.main .Info .continf .table .td .h4 {
+    text-align: left;
+    margin: 0;
 }
+
 
 .main .UR,
 .main .Dis,
@@ -298,10 +351,14 @@ body {
     align-content: center;
 }
 
+.main .EU .EUC .EULI .ul {
+    padding-left: 1.5rem;
+}
+
 .main .EU .EUC .EULI .ul .li {
-    list-style-type: circle;
-    margin-bottom: 0.5rem;
-    padding-right: 1rem;
+    list-style-type: disc;
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
 }
 
 /* Links */
@@ -319,31 +376,26 @@ body {
 }
 
 .main .HIFI .link:hover {
-    color: #FF69B4; /* Un rosa más brillante */
+    color: #FF69B4;
     cursor: pointer;
 }
 
 /* Behance */
 .main .HIFI .iframe-container {
     display: flex;
-    flex-direction: column; /* apila el h4 encima del iframe */
-    align-items: center; /* centra todo horizontalmente */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
     width: 100%;
-    text-align: center;
-}
-
-.main .HIFI .iframe-container .h4 {
-    margin-bottom: 1rem; /* espacio entre el título y el iframe */
-}
-
-.main .HIFI .iframe-container iframe {
-    width: 80%;
     max-width: 960px;
+}
+
+.main .HIFI .iframe-container .iframe {
+    width: 100%;
     height: 500px;
     border: none;
     border-radius: 10px;
+    margin-top: 1rem;
 }
 
 /* Conclusión */
@@ -352,17 +404,12 @@ body {
 }
 
 .main .conclu .proximos-pasos {
-    list-style-type: circle; /* Aquí se define el tipo de viñeta */
-    margin-left: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
-.main .conclu .proximos-pasos li {
-    font-family: var(--texto);
-    font-size: 1.125rem;
-    font-weight: 400;
-    text-align: justify;
-    margin-bottom: 0.5rem;
+.main .conclu .proximos-pasos .li {
+    list-style-type: disc;
+    margin-bottom: 0.8rem;
 }
 
 .main .conclu .h5 {
