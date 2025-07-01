@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="author" content="Jennifer Rodríguez">
+    <meta name="description" content="Portfolio de Jennifer Rodríguez, diseño UX/UI del proyecto Floridea">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
     <title>Floridea - Portfolio Jennifer Rodríguez</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Fotos Comprimidas/favicon-16x16-min.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +17,19 @@
     <link rel="stylesheet" type="text/css" href="Floridea.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="index.html" title="Inicio" class="nav-link">INICIO</a></li>
-                <li class="li"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">EXPERIENCIA DE
-                        USUARIO</a></li>
-                <li class="li"><a href="DEV.html" title="Programación" class="nav-link">PROGRAMACIÓN</a></li>
-                <li class="li"><a href="ELE.html" title="Electrónica" class="nav-link">ELECTRÓNICA</a></li>
-                <li class="li"><a href="SM.html" title="Sobre mi" class="nav-link">SOBRE MÍ</a></li>
-                <li class="li"><a href="SM.html#CTO" title="Contacto" class="nav-link">CONTACTO</a></li>
-                <li class="li"><a href="Start.html" title="IDIOMA" class="nav-link">ENGLISH</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" title="Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">Experiencia de
+                        Usuario</a></li>
+                <li class="nav-item"><a href="DEV.html" title="Programación" class="nav-link">Programación</a></li>
+                <li class="nav-item"><a href="ELE.html" title="Electrónica" class="nav-link">Electrónica</a></li>
+                <li class="nav-item"><a href="SM.html" title="Sobre mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="SM.html#CTO" title="Contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Start.html" hreflang="en" title="IDIOMA" class="nav-link">English</a></li>
             </ul>
         </nav>
     </header>
@@ -36,17 +39,16 @@
                 alt="Portada de estudio de caso de Floridea, tiene fondo de flores con una imagen de un celular con la aplicacion de floridea, ademas en fondo blanco del otro lado de la portada esta el texto del titulo Floridea."
                 class="img">
         </div>
-        <a href="UX.html" class="back">
-            <button class="button" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-            </svg> Atras
-            </button>
+        <a href="UX.html" class="back button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg> Atrás
         </a>
         <div class="Info">
             <div class="contimg">
                 <img src="Imagenes/UX/Floridea/Floridea.jpeg"
                     alt="Imagen con fondo de flores y en medio un telefono con el diseño de la aplicacion de floridea"
-                    class="img">
+                    class="img" loading="lazy">
             </div>
             <div class="continf">
                 <h4 class="h4">El problema</h4>
@@ -61,7 +63,7 @@
                             <h4 class="h4">Mi rol:</h4>
                         </td>
                         <td class="td">
-                            <h4 class="h4">Publico objetivo:</h4>
+                            <h4 class="h4">Público objetivo:</h4>
                         </td>
                     </tr>
                     <tr class="tr">
@@ -95,7 +97,7 @@
             </div>
         </div>
         <hr>
-        <div class="UR">
+        <section class="UR">
             <h4 class="h4">Investigación de usuarios:</h4>
             <p class="p">Las necesidades y emociones de los usuarios se han dado a conocer mediante una exhaustiva
                 encuesta. En su
@@ -110,18 +112,18 @@
             <div class="URIMG">
                 <div class="UR1">
                     <img src="Imagenes/UX/Floridea/Persona.png"
-                        alt="Persona representativa de los usuarios de la floreria, llamada Rosalina Somoza"
-                        class="img">
+                        alt="Persona representativa de los usuarios de la floreria, llamada Rosalina Somoza" class="img"
+                        loading="lazy">
                 </div>
                 <div class="UR2">
                     <img src="Imagenes/UX/Floridea/Journey.png"
                         alt="Mapa de recorrido de los pasos que tendria que hacer Rosalina Somoza para comprar un arreglo floral"
-                        class="img">
+                        class="img" loading="lazy">
                 </div>
             </div>
-        </div>
+        </section>
         <hr>
-        <div class="Dis">
+        <section class="Dis">
             <h4 class="h4">Diseños:</h4>
             <p class="p">El proceso de diseño se inició mediante la elaboración de bocetos de páginas en formato papel.
                 Se seleccionaron las versiones más prometedoras para dar lugar a una versión atractiva y de sencilla
@@ -129,16 +131,17 @@
             <div class="disimg">
                 <div class="DIS1">
                     <img src="Imagenes/UX/Floridea/Wirframe papel.jpg"
-                        alt="Wireframe de papel de pagina principal de floridea" class="img">
+                        alt="Wireframe de papel de pagina principal de floridea" class="img" loading="lazy">
                 </div>
                 <div class="DIS2">
                     <img src="Imagenes/UX/Floridea/Lofi Digital.png"
-                        alt="Wireframe digital en baja fidelidad de la paginal principal de floridea" class="img">
+                        alt="Wireframe digital en baja fidelidad de la paginal principal de floridea" class="img"
+                        loading="lazy">
                 </div>
             </div>
-        </div>
+        </section>
         <hr>
-        <div class="EU">
+        <section class="EU">
             <h4 class="h4">Estudio de usabilidad:</h4>
             <p class="p">Se llevó a cabo un estudio de usabilidad con la participación de cinco usuarios de manera no
                 moderada y en modalidad remota. A partir de este proceso, se han derivado seis conclusiones
@@ -155,12 +158,12 @@
                     </ul>
                 </div>
                 <div class="EUI">
-                    <img src="Imagenes/UX/Floridea/EU.png" alt="Estudios de usabilidad" class="img">
+                    <img src="Imagenes/UX/Floridea/EU.png" alt="Estudios de usabilidad" class="img" loading="lazy">
                 </div>
             </div>
-        </div>
+        </section>
         <hr>
-        <div class="HIFI">
+        <section class="HIFI">
             <h4 class="h4">Maquetas y prototipo de alta fidelidad:</h4>
             <p class="p">Con base en los resultados obtenidos del estudio de usabilidad, se realizaron ajustes y mejoras
                 significativas, incorporando diversos detalles, lo que culminó en la creación de las maquetas finales.
@@ -170,16 +173,16 @@
                     class="a" target="_blank" rel="noopener noreferrer">Prototipo
                     de alta fidelidad Floridea</a></span>
             <img src="Imagenes/UX/Floridea/HIFI.png"
-                alt="Imagenes de celulares con las paginas de la aplicacion en floridea" class="img">
+                alt="Imagenes de celulares con las paginas de la aplicacion en floridea" class="img" loading="lazy">
             <div class="iframe-container">
                 <h4 class="h4">Enlace Estudio de Caso Floridea en Behance</h4>
-                <iframe src="https://www.behance.net/embed/project/199807603?ilo0=1" class="iframe" height="316"
-                    width="404" allowfullscreen loading="lazy" frameborder="0" allow="clipboard-write"
-                    referrerpolicy="strict-origin-when-cross-origin" rel="noopener noreferrer"></iframe>
+                <iframe src="https://www.behance.net/embed/project/199807603?ilo0=1" class="iframe"
+                    title="Estudio de caso Floridea en Behance" height="316" width="404" allowfullscreen loading="lazy"
+                    frameborder="0" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-        </div>
+        </section>
         <hr>
-        <div class="conclu">
+        <section class="conclu">
             <h4 class="h4">Conclusiones y próximos pasos:</h4>
             <p class="p">Se ha adquirido el conocimiento de que comprender las necesidades y preferencias del
                 usuario es
@@ -204,11 +207,13 @@
                     florales a la
                     dirección del usuario.</li>
             </ul>
+        </section>
 
     </main>
     <footer class="footer">
         <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script src="MenuHamburguesa.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="author" content="Jennifer Rodríguez">
+    <meta name="description" content="Portfolio de Jennifer Rodríguez">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
     <title>UX - Jennifer Rodríguez - Portfolio</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Fotos Comprimidas/favicon-16x16-min.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +18,19 @@
 
 </head>
 
-<body class="body">
+<body>
     <header class="header">
-        <nav class="nav" aria-label="Navegacion Principal">
+        <nav class="nav">
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
             <ul class="nav-list">
-                <li class="li"><a href="index.html" title="Inicio" class="nav-link">INICIO</a></li>
-                <li class="li"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">EXPERIENCIA DE USUARIO</a></li>
-                <li class="li"><a href="DEV.html" title="Programación" class="nav-link">PROGRAMACIÓN</a></li>
-                <li class="li"><a href="ELE.html" title="Electrónica" class="nav-link">ELECTRÓNICA</a></li>
-                <li class="li"><a href="SM.html" title="Sobre mi" class="nav-link">SOBRE MÍ</a></li>
-                <li class="li"><a href="SM.html#CTO" title="Contacto" class="nav-link">CONTACTO</a></li>
-                <li class="li"><a href="Start.html" title="Cambair idioma" class="nav-link">ENGLISH</a></li>
+                <li class="nav-item"><a href="index.html" title="Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">Experiencia de
+                        Usuario</a></li>
+                <li class="nav-item"><a href="DEV.html" title="Programación" class="nav-link">Programación</a></li>
+                <li class="nav-item"><a href="ELE.html" title="Electrónica" class="nav-link">Electrónica</a></li>
+                <li class="nav-item"><a href="SM.html" title="Sobre mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="SM.html#CTO" title="Contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Start.html" hreflang="en" title="IDIOMA" class="nav-link">English</a></li>
             </ul>
         </nav>
     </header>
@@ -43,18 +47,36 @@
             <div class="CONTPRO">
                 <article class="moviruta">
                     <h2 class="num">01</h2>
-                    <a href="Moviruta.html" target="_self" rel="noopener noreferrer"><img src="Imagenes/UX/Moviruta UX.png"
-                            alt="Moviruta, foto de un iphone con la app de moviruta, imagen de fondo un camion" class="img" loading="lazy"></a>
+                    <a href="Moviruta.html">
+                        <figure>
+                            <img src="Imagenes/UX/Moviruta UX.png"
+                                alt="Moviruta, foto de un iphone con la app de moviruta, imagen de fondo un camion"
+                                class="img" loading="lazy">
+                            <figcaption>Moviruta</figcaption>
+                        </figure>
+                    </a>
                 </article>
                 <article class="aldente">
                     <h2 class="num">02</h2>
-                    <a href="AlDente.html" target="_self" rel="noopener noreferrer"><img src="Imagenes/UX/AlDente UX.png"
-                            alt="Al dente, foto de una computadora con el sitio web Al Dente, con comida de fondo difuminada" class="img" loading="lazy"></a>
+                    <a href="AlDente.html">
+                        <figure>
+                            <img src="Imagenes/UX/AlDente UX.png"
+                                alt="Al dente, foto de una computadora con el sitio web Al Dente, con comida de fondo difuminada"
+                                class="img" loading="lazy">
+                            <figcaption>Al Dente</figcaption>
+                        </figure>
+                    </a>
                 </article>
                 <article class="floridea">
                     <h2 class="num">03</h2>
-                    <a href="Floridea.html" target="_self" rel="noopener noreferrer"><img src="Imagenes/UX/Floridea UX.png"
-                            alt="Floridea, foto de un celular con la app floridea dentro" class="img" loading="lazy"></a>
+                    <a href="Floridea.html">
+                        <figure>
+                            <img src="Imagenes/UX/Floridea UX.png"
+                                alt="Floridea, foto de un celular con la app floridea dentro" class="img"
+                                loading="lazy">
+                            <figcaption>Floridea</figcaption>
+                        </figure>
+                    </a>
                 </article>
             </div>
         </section>
@@ -62,6 +84,7 @@
     <footer class="footer">
         <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script src="MenuHamburguesa.js"></script>
 </body>
 
 </html>
