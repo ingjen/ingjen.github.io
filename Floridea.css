@@ -5,6 +5,7 @@
     --texto: 'Inter', sans-serif;
 }
 
+/*Reset*/
 * {
     margin: 0;
     padding: 0;
@@ -13,28 +14,26 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: var(--texto);
 }
 
 body {
+    font-family: var(--texto);
     background-color: var(--negro);
     color: var(--blanco);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* ------------------------- ESTRUCTURA GENERAL ------------------------- */
 a {
     text-decoration: none;
     color: inherit;
-    transition: color 0.3s ease;
 }
 
-img {
+img, 
+figure {
     max-width: 100%;
-    height: auto;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -42,47 +41,79 @@ li {
     list-style: none;
 }
 
-/* ------------------------- HEADER Y NAV ------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+form,
+button,
+input,
+textarea,
+select {
+    font-family: var(--texto);
+    background-color: var(--blanco);
+}
+/* Header */
 .header {
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
-    padding: 1rem;
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .menu-toggle {
     display: none;
-    font-size: 1.5rem;
-    color: var(--blanco);
     background: none;
     border: none;
+    font-size: 2rem;
+    color: var(--blanco);
     cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
 }
 
+/*Nav list*/
 .nav-list {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.nav-item .nav-link {
+.nav-item {
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.nav-link {
     padding: 0.5rem 1rem;
     border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
@@ -90,7 +121,7 @@ li {
     color: var(--negro);
 }
 
-/* ------------------------- BOTÓN ATRÁS*/
+/* Boton atras*/
 .back.button {
     display: inline-flex;
     align-items: center;
@@ -110,9 +141,10 @@ li {
     color: var(--negro);
 }
 
-/* ------------------------- SECCIONES PRINCIPALES ------------------------- */
+/* Main*/
 .main {
     padding: 1rem;
+        animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
 }
 
 .h4 {
@@ -133,7 +165,7 @@ hr {
     width: 90%;
 }
 
-/* ------------------------- CONTENEDORES DE IMÁGENES Y TEXTO ------------------------- */
+/* Contenedores de imagenes y texto */
 .portada {
     display: flex;
     justify-content: center;
@@ -169,12 +201,23 @@ hr {
 .table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
+.tr{
+    border-bottom: 1px solid #ddd;
+}
+
+
 .td {
-    padding: 0.8rem;
+    padding: 12px;
+    text-align: left;
     vertical-align: top;
+}
+
+.td .h4 {
+    margin: 0;
+    text-align: left;
 }
 
 .disimg .img, .EUI .img {
@@ -183,7 +226,7 @@ hr {
     margin: auto;
 }
 
-/* ------------------------- LISTAS ------------------------- */
+/* Listas */
 .ul {
     padding-left: 1.5rem;
 }
@@ -195,7 +238,7 @@ hr {
     text-align: justify;
 }
 
-/* ------------------------- PROTOTIPO Y BEHANCE ------------------------- */
+/* Prototipo y Behance */
 .link {
     color: var(--rosa);
     text-decoration: underline;
@@ -224,7 +267,7 @@ hr {
     border-radius: 10px;
 }
 
-/* ------------------------- CONCLUSIONES ------------------------- */
+/* Conclusiones */
 .blockquote {
     border-left: 3px solid var(--rosa);
     padding-left: 1.5rem;
@@ -245,20 +288,33 @@ hr {
     padding-left: 1.5rem;
 }
 
-/* ------------------------- FOOTER ------------------------- */
+/* Footer */
 .footer {
+    width: 100%;
     padding: 1.5rem 0;
     text-align: center;
     border-top: 1px solid var(--blanco);
+    background-color: var(--negro);
 }
 
-.span {
-    font-size: 0.875rem;
+.footer .span {
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
+    color: var(--blanco);
 }
 
-/* ------------------------- RESPONSIVE ------------------------- */
+/* Animación */
+@keyframes wipe-in-right {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* Responsive*/
 @media (min-width:0px) and (max-width: 1024px) {
     .nav-list {
         display: none;

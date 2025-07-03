@@ -5,10 +5,23 @@
     --texto: 'Inter', sans-serif;
 }
 
+/*Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--texto);
+    background-color: var(--negro);
+    color: var(--blanco);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img,
@@ -26,10 +39,6 @@ a {
 
 li {
     list-style-type: none;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 h1,
@@ -50,188 +59,166 @@ textarea,
 select {
     font-family: var(--texto);
     background-color: var(--blanco);
-    -webkit-font-smoothing: antialiasing;
-    -moz-osx-font-smothing: grayscale;
 }
 
-hr {
-    display: block;
-    color: aliceblue;
-}
-
-body {
-    font-family: var(--texto);
-    background-color: var(--negro);
-    color: var(--blanco);
-    -webkit-font-smoothing: antialiasing;
-    -moz-ozx-font-smoothing: grayscale;
-    cursor: auto;
-
-}
-
+/*Header*/
 .header {
     background-color: var(--negro);
     border-top: 2px solid #FFF;
     border-bottom: 2px solid #FFF;
     width: 100%;
-    min-height: 5em;
-    margin-top: 1.3rem;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
 }
 
-.header .nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.header .nav .ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+.nav {
     width: 100%;
     max-width: 1200px;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.header .nav .ul .li {
-    margin: 0 1rem;
-    font-family: var(--texto);
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--blanco);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 1rem;
+}
+
+/*Nav list*/
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nav-item {
     font-size: 16px;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
-    position: relative;
 }
 
-.header .nav .ul .li .a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.header .nav .ul .li .a ::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100% + 10px);
-    height: 100%;
-    background-color: transparent;
+.nav-link {
+    padding: 0.5rem 1rem;
     border-radius: 15px;
-    transition: background-color 0.3s;
-    z-index: -1;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.header .nav .ul .li .a:hover {
-    background: #F8FAF7;
-    border-radius: 15px;
+.nav-link:hover {
+    background-color: var(--blanco);
     color: var(--negro);
-    cursor: pointer;
 }
 
-.header .nav .ul .li .a:hover::before {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
+/*Main*/
 .main {
-    position: relative;
-    z-index: 1;
+    padding: 2rem 1.5rem;
 }
 
-.main .ELE {
+/*Seccion Ele*/
+.ELE-section {
     display: flex;
-    width: 100%;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
 }
 
-.main .ELE .CONTELE {
-    flex: 1;
-    padding: 1.3rem;
+/*Texto Descriptivo*/
+.CONTELE {
+    flex: 1 1 400px;
 }
 
-.main .ELE .CONTELE h2,
-.main .ELE .CONTELE p,
-.main .ELE .CONTELE .h4 {
-    font-family: var(--texto);
-    margin-bottom: 1.3rem;
-    text-align: left;
-}
-
-.main .ELE .CONTELE h2 {
+.CONTELE h2 {
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
-.main .ELE .CONTELE p {
-    font-size: 20px;
-    font-weight: 400;
+.CONTELE p {
+    font-size: 18px;
+    margin-bottom: 1.2rem;
 }
 
-.main .ELE .CONTELE h4 {
+.CONTELE h4 {
     color: var(--rosa);
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
-    text-transform: uppercase;
+    margin-top: 1.2rem;
 }
 
-.main .ELE .CONTPRO {
-    flex: 1;
-    padding: 1.3rem;
+/*Proyectos de electronica*/
+.CONTPRO {
+    flex: 1 1 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    gap: 2rem;
+    align-items: flex-end;
 }
 
-.main .ELE .CONTPRO .num {
-    margin-right: 0.2rem;
-    font-family: var(--texto);
+/*Cada artiuclo de proyecto*/
+.CONTPRO article {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.num {
     font-size: 40px;
     font-weight: 600;
-    text-transform: uppercase;
+    color: var(--rosa);
 }
 
-.main .ELE .CONTPRO .img {
-    width: 500px;
-    height: 200px;
-    transition: filter 0.3s;
+.img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    transition: filter 0.3s ease;
 }
 
-.main .ELE .CONTPRO .img:hover {
+.img:hover {
     filter: opacity(0.5);
 }
 
-.main .ELE .CONTPRO article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.3rem;
+/*Pïe de imagen*/
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--blanco);
 }
 
+/*footer*/ 
 .footer {
-    position: absolute;
     width: 100%;
     padding: 1.5rem 0;
     text-align: center;
-    z-index: 1;
     border-top: 1px solid var(--blanco);
+    background-color: var(--negro);
 }
 
 .footer .span {
-    color: var(--blanco);
-    font-family: var(--texto);
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
+    color: var(--blanco);
 }
 
+/*Animación*/
 @keyframes wipe-in-right {
     from {
         clip-path: inset(0 100% 0 0);
@@ -242,6 +229,30 @@ body {
     }
 }
 
-[transition-style="in:wipe:right"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+/* Responsive */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav.active .nav-list {
+        display: flex;
+    }
+
+    .ELE-section {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
 }

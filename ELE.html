@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="author" content="Jennifer Rodríguez">
+    <meta name="description" content="Portfolio de Jennifer Rodríguez">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
     <title>
         Electrónica- Jennifer Rodríguez - Portfolio
     </title>
@@ -17,29 +19,24 @@
     <link rel="stylesheet" type="text/css" href="ELE.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="index.html" title="Inicio" class="a" target="_self"
-                        rel="noopener noreferrer">INICIO</a></li>
-                <li class="li"><a href="UX.html" title="Experiencia de Usuario" class="a" target="_self"
-                        rel="noopener noreferrer">EXPERIENCIA DE USUARIO</a></li>
-                <li class="li"><a href="DEV.html" title="Programación" class="a" target="_self"
-                        rel="noopener noreferrer">PROGRAMACIÓN</a></li>
-                <li class="li"><a href="ELE.html" title="Electrónica" class="a" target="_self"
-                        rel="noopener noreferrer">ELECTRÓNICA</a></li>
-                <li class="li"><a href="SM.html" title="Sobre mi" class="a" target="_self"
-                        rel="noopener noreferrer">SOBRE MÍ</a></li>
-                <li class="li"><a href="SM.html#CTO" title="Contacto" class="a" target="_self"
-                        rel="noopener noreferrer">CONTACTO</a></li>
-                <li class="li"><a href="Start.html" title="IDIOMA" class="a" target="_self"
-                        rel="noopener noreferrer">ENGLISH</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" title="Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">Experiencia de
+                        Usuario</a></li>
+                <li class="nav-item"><a href="DEV.html" title="Programación" class="nav-link">Programación</a></li>
+                <li class="nav-item"><a href="ELE.html" title="Electrónica" class="nav-link">Electrónica</a></li>
+                <li class="nav-item"><a href="SM.html" title="Sobre mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="SM.html#CTO" title="Contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Start.html" hreflang="en" title="IDIOMA" class="nav-link">English</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="ELE" id="ELE">
+        <section class="ELE-section" id="ELE">
             <div class="CONTELE">
                 <h2 class="h2">Electrónica</h2>
                 <p class="p">Priorizo mucho el diseño de circuitos electrónicos eficientes en cuanto al
@@ -54,18 +51,23 @@
                 <p class="p">LTSpice, Proteus, Arduino IDE, Visual Studio, Thonny</p>
             </div>
             <div class="CONTPRO">
-                <article class="Chaac kaabal">
+                <article class="Chaac-kaabal">
                     <h2 class="num">01</h2>
-                    <a href="Chaac Kaabal.html" target="_self" rel="noopener noreferrer"><img
-                            src="Imagenes/ELE/Chaac kaabal log 1.0 ELE.png" alt="Chaac Kaabal Log" class="img" loading="lazy"></a>
+                    <a href="Chaac Kaabal.html">
+                        <figure>
+                            <img src="Imagenes/ELE/Chaac kaabal log 1.0 ELE.png"
+                                alt="Chaac Kaabal Log, fondo de placa electronica azul y el log de la empresa Itzaes Tecnologias Energeicas S.A de C.v"
+                                class="img" loading="lazy">
+                        </figure>
+                    </a>
                 </article>
-
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
-        <span class="span">Jennifer Rodríguez Torres / 2024.</span>
+        <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script src="MenuHamburguesa.js"></script>
 </body>
 
 </html>
