@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="author" content="Jennifer Rodríguez">
+    <meta name="description" content="Portfolio de Jennifer Rodríguez">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
     <title>
         Chaac Kaabal- Portfolio Jennifer Rodríguez
     </title>
@@ -17,25 +19,19 @@
     <link rel="stylesheet" type="text/css" href="Chaac Kaabal.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="index.html" title="Inicio" class="a" target="_self"
-                        rel="noopener noreferrer">INICIO</a></li>
-                <li class="li"><a href="UX.html" title="Experiencia de Usuario" class="a" target="_self"
-                        rel="noopener noreferrer">EXPERIENCIA DE USUARIO</a>
-                </li>
-                <li class="li"><a href="DEV.html" title="Programación" class="a" target="_self"
-                        rel="noopener noreferrer">PROGRAMACIÓN</a></li>
-                <li class="li"><a href="ELE.html" title="Electrónica" class="a" target="_self"
-                        rel="noopener noreferrer">ELECTRÓNICA</a></li>
-                <li class="li"><a href="SM.html" title="Sobre mi" class="a" target="_self"
-                        rel="noopener noreferrer">SOBRE MÍ</a></li>
-                <li class="li"><a href="SM.html#CTO" title="Contacto" class="a" target="_self"
-                        rel="noopener noreferrer">CONTACTO</a></li>
-                <li class="li"><a href="Start.html" title="IDIOMA" class="a" target="_self"
-                        rel="noopener noreferrer">ENGLISH</a></li>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" title="Inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="UX.html" title="Experiencia de Usuario" class="nav-link">Experiencia de
+                        Usuario</a></li>
+                <li class="nav-item"><a href="DEV.html" title="Programación" class="nav-link">Programación</a></li>
+                <li class="nav-item"><a href="ELE.html" title="Electrónica" class="nav-link">Electrónica</a></li>
+                <li class="nav-item"><a href="SM.html" title="Sobre mi" class="nav-link">Sobre Mí</a></li>
+                <li class="nav-item"><a href="SM.html#CTO" title="Contacto" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="Start.html" hreflang="en" title="IDIOMA" class="nav-link">English</a></li>
             </ul>
         </nav>
     </header>
@@ -45,11 +41,16 @@
                 alt="Portada Chaac Kaabal Log 1.0, imagen de placa de circuitos de fondo azul menta, con logo de Itzaes Tecnologias Energeticas, nombre de Jennifer Rodríguez Torres, herramientas usadas: fritzing y tinkercad."
                 class="img">
         </div>
+        <a href="UX.html" class="back button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg> Atrás
+        </a>
         <div class="Info">
             <div class="contimg">
                 <img src="Imagenes/ELE/Chaac Kaabal 1.0/Chaac kaabal 2.png"
                     alt="Imagen similar a la de la portada con solo el logo de Itzaes Tecnologias Energeticas y el nombre del projecto que es chaac kaabal 1.0"
-                    class="img">
+                    class="img" loading="lazy">
             </div>
             <div class="continf">
                 <h4 class="h4">El problema</h4>
@@ -67,7 +68,7 @@
                             <h4 class="h4">Mi rol:</h4>
                         </td>
                         <td class="td">
-                            <h4 class="h4">Publico objetivo:</h4>
+                            <h4 class="h4">Público objetivo:</h4>
                         </td>
                     </tr>
                     <tr class="tr">
@@ -99,14 +100,15 @@
                 </table>
             </div>
         </div>
-        <div class="OBJ">
+        <hr>
+        <section class="OBJ">
             <h4 class="h4">Objetivos Generales y Especificos</h4>
             <br>
             <h3 class="h3">General</h3>
             <p class="p">Desarrollar un prototipo experimental de medición y almacenamiento de datos de sensores para
                 comprobar el funcionamiento de un sistema en donde se encuentra una turbina.</p>
             <br>
-            <h3 class="h3">Especificos</h3>
+            <h3 class="h3">Específicos</h3>
             <ul class="ul">
                 <li class="li">Diseñar y construir un prototipo que mida y
                     almacene los datos de los sensores que se
@@ -120,8 +122,9 @@
                     se le presentan.</li>
             </ul>
             <br>
-        </div>
-        <div class="Var">
+        </section>
+        <hr>
+        <section class="Var">
             <h4 class="h4">Variables a medir</h4>
             <p class="p">
                 Se han identificado las variables críticas para evaluar el desempeño de la turbina, siendo estas el
@@ -133,7 +136,8 @@
                 líquido o sólido) sobre la superficie con la que interactúa. La presión es una magnitud física, medida
                 en pascales (Pa) de acuerdo con el Sistema Internacional de Unidades. Es importante destacar que la
                 presión absoluta se determina sumando la presión atmosférica y la presión manométrica.</p>
-        </div>
+        </section>
+        <hr>
         <div class="Sen">
             <h4 class="h4">Sensores Investigados</h4>
             <p class="p">
@@ -148,7 +152,7 @@
             </p>
             <br>
         </div>
-        <div class="DC">
+        <section class="DC">
             <h4 class="h4">Diseño del Circuito</h4>
             <p class="p">
                 El diseño del circuito fue concebido considerando las limitaciones presupuestarias, dado que esta
@@ -163,10 +167,10 @@
                 el funcionamiento de la turbina, permitiendo su monitoreo remoto. Se tomaron en consideración las
                 condiciones eléctricas en las que operarían tanto los sensores como los demás componentes del circuito,
                 garantizando así un rendimiento óptimo y seguro.</p>
-            </p>
             <br>
-        </div>
-        <div class="DEXT">
+        </section>
+        <hr>
+        <section class="DEXT">
             <h4 class="h4">Diseño Exterior del Dispositivo</h4>
             <p class="p">
                 El diseño exterior del dispositivo se caracteriza por su simplicidad y funcionalidad, facilitando la
@@ -183,10 +187,12 @@
                 específicas.</p>
             <br>
             <div class="DEXTIMG">
-                <img src="Imagenes/ELE/Chaac Kaabal 1.0/CK-VI.png" alt="">
+                <img src="Imagenes/ELE/Chaac Kaabal 1.0/CK-VI.png" alt="Vista del modelo 3D del prototipo Chaac Kaabal realizado en Tinkercad"
+                    loading="lazy">
             </div>
-        </div>
-        <div class="conclu">
+        </section>
+        <hr>
+        <section class="conclu">
             <h4 class="h4">Conclusiones y Recomendaciones</h4>
             <p class="p">Durante la elaboración de esta propuesta, adquirí un profundo entendimiento de las necesidades
                 específicas y detalladas del entorno donde se requieren este tipo de dispositivos. Este proceso me
@@ -203,11 +209,12 @@
                 dispositivo, la realización de pruebas exhaustivas para garantizar un rendimiento óptimo, la creación de
                 un sitio web para visualizar los datos y la posibilidad de desarrollar una aplicación móvil para brindar
                 acceso más práctico al funcionamiento del sistema a través de nuestro dispositivo.</p>
-
+        </section>
     </main>
     <footer class="footer">
-        <span class="span">Jennifer Rodríguez Torres / 2024.</span>
+        <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script src="MenuHamburguesa.js"></script>
 </body>
 
 </html>
