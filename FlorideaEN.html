@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="descripción" content="UX desing for Floridea">
     <title>
-        Floridea - Portfolio Jennifer Rodríguez
+        Floridea - User Experience - Jennifer Rodríguez
     </title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Fotos Comprimidas/favicon-16x16-min.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,25 +17,20 @@
     <link rel="stylesheet" type="text/css" href="Floridea.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="Start.html" title="Inicio" class="a" target="_self"
-                        rel="noopener noreferrer">START</a></li>
-                <li class="li"><a href="UX.html" title="Experiencia de Usuario" class="a" target="_self"
-                        rel="noopener noreferrer">USER EXPERIENCE</a>
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="Start.html" title="Home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="UXEN.html" title="User Experience" class="nav-link">User Experience</a>
                 </li>
-                <li class="li"><a href="DEV.html" title="Programación" class="a" target="_self"
-                        rel="noopener noreferrer">CODING</a></li>
-                <li class="li"><a href="ELE.html" title="Electrónica" class="a" target="_self"
-                        rel="noopener noreferrer">ELECTRONICS</a></li>
-                <li class="li"><a href="SM.html" title="Sobre mi" class="a" target="_self"
-                        rel="noopener noreferrer">ABOUT ME</a></li>
-                <li class="li"><a href="SM.html#CTO" title="Contacto" class="a" target="_self"
-                        rel="noopener noreferrer">CONTACT</a></li>
-                <li class="li"><a href="index.html" title="IDIOMA" class="a" target="_self"
-                        rel="noopener noreferrer">SPANISH</a></li>
+                <li class="nav-item"><a href="DEVEN.html" title="Programming" class="nav-link">Programming</a></li>
+                <li class="nav-item"><a href="ELEEN.html" title="Electronics" class="nav-link">Electronics</a></li>
+                <li class="nav-item"><a href="AM.html" title="About Me" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="AM.html#CTO" title="Contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" hreflang="en" title="Language" class="nav-link">Spanish</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -45,6 +40,11 @@
                 alt="It has a floral background with an image of a cell phone displaying the Floridea application. Additionally, on the white background on the other side of the cover, there is the title text Floridea."
                 class="img">
         </div>
+        <a href="UXEN.html" class="back button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg> Back
+        </a>
         <div class="Info">
             <div class="contimg">
                 <img src="Imagenes/UX/Floridea/Floridea.jpeg"
@@ -96,8 +96,8 @@
                 </table>
             </div>
         </div>
-        <div class="UR">
-            <hr>
+        <hr>
+        <section class="UR">
             <h4 class="h4">User Research:</h4>
             <p class="p">The needs and emotions of users have been identified through comprehensive surveys. Among the
                 most prominent challenges are the difficulty in finding quality and affordable floral arrangements, the
@@ -118,7 +118,8 @@
                         class="img">
                 </div>
             </div>
-        </div>
+        </section>
+        <hr>
         <div class="Dis">
             <h4 class="h4">Designs:</h4>
             <p class="p">The design process began by creating page sketches on paper. The most promising versions were
@@ -190,9 +191,9 @@
             <div class="Behance">
                 <h5 class="h5">Floridea Case Study Link on Behance</h5>
                 <br>
-                <iframe src="https://www.behance.net/embed/project/199897909?ilo0=1" class="iframe" rel="noopener noreferrer" height="316" width="404"
-                    allowfullscreen lazyload frameborder="0" allow="clipboard-write"
-                    refererPolicy="strict-origin-when-cross-origin"></iframe> 
+                <iframe src="https://www.behance.net/embed/project/199897909?ilo0=1" class="iframe"
+                    rel="noopener noreferrer" height="316" width="404" allowfullscreen lazyload frameborder="0"
+                    allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
             </div>
     </main>
     <footer class="footer">
