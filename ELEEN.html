@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="autor" content="Jennifer Rodríguez">
-    <meta name="descripción" content="Portfolio de Jennifer Rodríguez">
+    <meta name="author" content="Jennifer Rodríguez">
+    <meta name="description" content="Portfolio of Jennifer Rodríguez">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
     <title>
-        Jennifer Rodríguez - Portfolio
+        Electronics - Jennifer Rodríguez - Portfolio
     </title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Fotos Comprimidas/favicon-16x16-min.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,46 +19,50 @@
     <link rel="stylesheet" type="text/css" href="ELE.css">
 </head>
 
-<body class="body">
+<body>
     <header class="header">
         <nav class="nav">
-            <ul class="ul">
-                <li class="li"><a href="Start.html" title="Start" class="a" target="_self" rel="noopener noreferrer">START</a></li>
-                <li class="li"><a href="UXEN.html" title="Experiencia de Usuario" class="a" target="_self" rel="noopener noreferrer">USER EXPERIENCE</a></li>
-                <li class="li"><a href="DEVEN.html" title="Programación" class="a" target="_self" rel="noopener noreferrer">CODING</a></li>
-                <li class="li"><a href="ELEEN.html" title="Electrónica" class="a" target="_self" rel="noopener noreferrer">ELECTRONICS</a></li>
-                <li class="li"><a href="AM.html" title="Sobre mi" class="a" target="_self" rel="noopener noreferrer">ABOUT ME</a></li>
-                <li class="li"><a href="AM.html#CTO" title="Contacto" class="a" target="_self" rel="noopener noreferrer">CONTACT</a></li>
-                <li class="li"><a href="index.html" title="IDIOMA" class="a" target="_self" rel="noopener noreferrer">SPANISH</a></li>
+            <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="Start.html" title="Home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="UXEN.html" title="User Experience" class="nav-link">User Experience</a></li>
+                <li class="nav-item"><a href="DEVEN.html" title="Programming" class="nav-link">Programming</a></li>
+                <li class="nav-item"><a href="ELEEN.html" title="Electronics" class="nav-link">Electronics</a></li>
+                <li class="nav-item"><a href="AM.html" title="About Me" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="AM.html#CTO" title="Contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="index.html" hreflang="es" title="LANGUAGE" class="nav-link">Español</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <div class="ELE" id="ELE">
+        <section class="ELE-section" id="ELE">
             <div class="CONTELE">
                 <h2 class="h2">Electronics</h2>
-                <p class="p">I prioritize the design of efficient electronic circuits in terms of energy consumption and
-                    optimal performance for their specific application. Ensuring they meet specific conditions and
-                    guarantee their long-term functionality</p>
+                <p class="p">I prioritize the design of energy-efficient electronic circuits that ensure optimal performance in their specific applications. These circuits meet specific conditions and guarantee long-term functionality.</p>
                 <h4 class="h4">Applied to:</h4>
-                <p class="p">Circuit design, general and specific sensor measurement, communication, data and signal
-                    processing and analysis, electronic device installation, process development and optimization,
-                    technical maintenance in hardware and software.</p>
-                <h4 class="h4">Electronics Softwares:</h4>
+                <p class="p">Circuit design, measurement of general and specific sensors, communication, processing and analysis of data and signals, installation of electronic devices, development and optimization of processes, technical maintenance in Hardware and Software.</p>
+                <h4 class="h4">Electronics software:</h4>
                 <p class="p">LTSpice, Proteus, Arduino IDE, Visual Studio, Thonny</p>
             </div>
             <div class="CONTPRO">
-                <article class="Chaac kaabal">
+                <article class="Chaac-kaabal">
                     <h2 class="num">01</h2>
-                    <a href="#" target="_self" rel="noopener noreferrer"><img src="/Imagenes/5-min.png" alt="Chaac Kaabal Log" class="img" loading="lazy"></a>
+                    <a href="Chaac Kaabal EN.html">
+                        <figure>
+                            <img src="Imagenes/ELE/Chaac kaabal log 1.0 ELE.png"
+                                alt="Chaac Kaabal Log, blue electronic board background and the logo of Itzaes Tecnologías Energéticas S.A de C.V"
+                                class="img" loading="lazy">
+                            <figcaption>Chaac Kaabal Log 1.0</figcaption>
+                        </figure>
+                    </a>
                 </article>
-
             </div>
-        </div>
+        </section>
     </main>
     <footer class="footer">
-        <span class="span">Jennifer Rodríguez Torres / 2024.</span>
+        <span class="span">Jennifer Rodríguez Torres / 2025.</span>
     </footer>
+    <script src="MenuHamburguesa.js"></script>
 </body>
 
 </html>
